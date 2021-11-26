@@ -1,0 +1,64 @@
+[
+    {
+        "name": "Очная",
+        "checked": true,
+        "value": "fullTime"
+    },
+    {
+        "name": "Заочная",
+        "value": "correspondence",
+        "none": true
+    },
+    {
+        "name": "Заочная (ГВД)",
+        "value": "correspondenceGVD"
+    },
+    {
+        "name": "Заочная (классика)",
+        "value": "correspondenceClassic"
+    },
+    {
+        "name": "Заочная (дистант)",
+        "value": "correspondenceDistant"
+    },
+    {
+        "name": "Очная на базе СОО",
+        "value": "fullTimeCOO",
+        "none": true
+    },
+    {
+        "name": "Очная на базе СПО",
+        "value": "fullTimeCPO",
+        "none": true
+    },
+    {
+        "name": "Очно-заочная (ГВД)",
+        "value": "fullTimeСorrespondenceGVD",
+        "none": true
+    },
+    {
+        "name": "Очно-заочная (классика)",
+        "value": "fullTimeСorrespondenceClassic",
+        "none": true
+    },
+    {
+        "name": "Очно-заочная (дистант)",
+        "value": "fullTimeСorrespondenceDistant",
+        "none": true
+    },
+    {
+        "name": "Очная на базе медицинского СПО",
+        "value": "fullTimeMedCPO",
+        "none": true
+    },
+    {
+        "name": "Очная на базе высшего психолого-педагогического, дефектологического и педагогического образования",
+        "value": "fullTimeSpecial",
+        "none": true
+    },
+    {
+        "name": "Очная на базе неспециального высшего образования",
+        "value": "fullTimeNoSpecial",
+        "none": true
+    }
+]

@@ -1,0 +1,31 @@
+$color-white: #ffffff;
+$color-black: #000000;
+
+
+%flex-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+%flex-space {
+	display: flex;
+	justify-content: space-between;
+}
+
+%wrap-space {
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+%flex-wrap-space {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+$desktop-width: 1440px;
+
+@font-face {
+	font-family: "Montserrat";
+	src: url(../fonts/Montserrat-Medium.ttf);
+}
