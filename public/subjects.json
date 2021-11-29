@@ -1593,5 +1593,658 @@
                 "status": "fullTimeСorrespondenceDistant"
             }
         ]
+    },
+    {
+        "name": "Лингвистика",
+        "description": "Перевод и переводоведение",
+        "direction": "Бакалавриат на базе ВО",
+        "code": "Код направления 45.03.02",
+        "prices": [
+            {
+                "amount": "48 000",
+                "id": "2.5 года",
+                "checked": true,
+                "status": "fullTime"
+            },
+            {
+                "amount": "48 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceGVD"
+            },
+            {
+                "amount": "48 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceClassic"
+            },
+            {
+                "amount": "39 000",
+                "id": "3 года",
+                "status": "correspondenceGVD"
+            },
+            {
+                "amount": "39 000",
+                "id": "3 года",
+                "status": "correspondenceClassic"
+            },
+            {
+                "amount": "29 000",
+                "id": "3 года",
+                "status": "correspondenceDistant"
+            }
+        ]
+    },
+    {
+        "name": "Педагогическое образование",
+        "description": "Иностранный язык",
+        "direction": "Бакалавриат на базе ВО",
+        "code": "Код направления 44.03.01",
+        "prices": [
+            {
+                "amount": "48 000",
+                "id": "2.5 года",
+                "checked": true,
+                "status": "fullTime"
+            },
+            {
+                "amount": "48 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceGVD"
+            },
+            {
+                "amount": "48 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceClassic"
+            },
+            {
+                "amount": "39 000",
+                "id": "3 года",
+                "status": "correspondenceGVD"
+            },
+            {
+                "amount": "39 000",
+                "id": "3 года",
+                "status": "correspondenceClassic"
+            },
+            {
+                "amount": "25 000",
+                "id": "3 года",
+                "status": "correspondenceDistant"
+            }
+        ]
+    },
+    {
+        "name": "Педагогическое образование",
+        "description": "Дошкольное образование",
+        "direction": "Бакалавриат на базе ВО",
+        "code": "Код направления 44.03.01",
+        "prices": [
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "checked": true,
+                "status": "fullTime"
+            },
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceGVD"
+            },
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceClassic"
+            },
+            {
+                "amount": "32 000",
+                "id": "3 года",
+                "status": "correspondenceGVD"
+            },
+            {
+                "amount": "32 000",
+                "id": "3 года",
+                "status": "correspondenceClassic"
+            },
+            {
+                "amount": "25 000",
+                "id": "3 года",
+                "status": "correspondenceDistant"
+            }
+        ]
+    },
+    {
+        "name": "Педагогическое образование",
+        "description": "Начальное образование",
+        "direction": "Бакалавриат на базе ВО",
+        "code": "Код направления 44.03.01",
+        "prices": [
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "checked": true,
+                "status": "fullTime"
+            },
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceGVD"
+            },
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceClassic"
+            },
+            {
+                "amount": "32 000",
+                "id": "3 года",
+                "status": "correspondenceGVD"
+            },
+            {
+                "amount": "32 000",
+                "id": "3 года",
+                "status": "correspondenceClassic"
+            },
+            {
+                "amount": "25 000",
+                "id": "3 года",
+                "status": "correspondenceDistant"
+            }
+        ]
+    },
+    {
+        "name": "Педагогическое образование",
+        "description": "Физическая культура и спорт",
+        "direction": "Бакалавриат на базе ВО",
+        "code": "Код направления 44.03.01",
+        "prices": [
+            {
+                "amount": "48 000",
+                "id": "2.5 года",
+                "checked": true,
+                "status": "fullTime"
+            },
+            {
+                "amount": "48 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceGVD"
+            },
+            {
+                "amount": "48 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceClassic"
+            },
+            {
+                "amount": "32 500",
+                "id": "3 года",
+                "status": "correspondenceGVD"
+            },
+            {
+                "amount": "30 000",
+                "id": "3 года",
+                "status": "correspondenceClassic"
+            },
+            {
+                "amount": "30 000",
+                "id": "3 года",
+                "status": "correspondenceDistant"
+            }
+        ]
+    },
+    {
+        "name": "Менеджмент",
+        "description": "Международный менеджмент",
+        "direction": "Бакалавриат на базе ВО",
+        "code": "Код направления 38.03.02",
+        "prices": [
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "checked": true,
+                "status": "fullTime"
+            },
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceGVD"
+            },
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceClassic"
+            },
+            {
+                "amount": "32 000",
+                "id": "3 года",
+                "status": "correspondenceGVD"
+            },
+            {
+                "amount": "32 000",
+                "id": "3 года",
+                "status": "correspondenceClassic"
+            },
+            {
+                "amount": "25 000",
+                "id": "3 года",
+                "status": "correspondenceDistant"
+            }
+        ]
+    },
+    {
+        "name": "Менеджмент",
+        "description": "Управление персоналом",
+        "direction": "Бакалавриат на базе ВО",
+        "code": "Код направления 38.03.02",
+        "prices": [
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "checked": true,
+                "status": "fullTime"
+            },
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceGVD"
+            },
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceClassic"
+            },
+            {
+                "amount": "32 000",
+                "id": "3 года",
+                "status": "correspondenceGVD"
+            },
+            {
+                "amount": "32 000",
+                "id": "3 года",
+                "status": "correspondenceClassic"
+            },
+            {
+                "amount": "25 000",
+                "id": "3 года",
+                "status": "correspondenceDistant"
+            }
+        ]
+    },
+    {
+        "name": "Менеджмент",
+        "description": "Логистика и транспортный менеджмент",
+        "direction": "Бакалавриат на базе ВО",
+        "code": "Код направления 38.03.02",
+        "prices": [
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "checked": true,
+                "status": "fullTime"
+            },
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceGVD"
+            },
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceClassic"
+            },
+            {
+                "amount": "32 000",
+                "id": "3 года",
+                "status": "correspondenceGVD"
+            },
+            {
+                "amount": "32 000",
+                "id": "3 года",
+                "status": "correspondenceClassic"
+            },
+            {
+                "amount": "25 000",
+                "id": "3 года",
+                "status": "correspondenceDistant"
+            }
+        ]
+    },
+    {
+        "name": "Менеджмент",
+        "description": "Спортивный менеджмент",
+        "direction": "Бакалавриат на базе ВО",
+        "code": "Код направления 38.03.02",
+        "prices": [
+            {
+                "amount": "48 000",
+                "id": "2.5 года",
+                "checked": true,
+                "status": "fullTime"
+            },
+            {
+                "amount": "48 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceGVD"
+            },
+            {
+                "amount": "48 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceClassic"
+            },
+            {
+                "amount": "32 500",
+                "id": "3 года",
+                "status": "correspondenceGVD"
+            },
+            {
+                "amount": "30 000",
+                "id": "3 года",
+                "status": "correspondenceClassic"
+            },
+            {
+                "amount": "30 000",
+                "id": "3 года",
+                "status": "correspondenceDistant"
+            }
+        ]
+    },
+    {
+        "name": "Экономика",
+        "description": "Финансы и кредит",
+        "direction": "Бакалавриат на базе ВО",
+        "code": "Код направления 38.03.01",
+        "prices": [
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "checked": true,
+                "status": "fullTime"
+            },
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceGVD"
+            },
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceClassic"
+            },
+            {
+                "amount": "32 000",
+                "id": "3 года",
+                "status": "correspondenceGVD"
+            },
+            {
+                "amount": "32 000",
+                "id": "3 года",
+                "status": "correspondenceClassic"
+            },
+            {
+                "amount": "25 000",
+                "id": "3 года",
+                "status": "correspondenceDistant"
+            }
+        ]
+    },
+    {
+        "name": "Экономика",
+        "description": "Бухгалтерский учет, анализ и аудит",
+        "direction": "Бакалавриат на базе ВО",
+        "code": "Код направления 38.03.01",
+        "prices": [
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "checked": true,
+                "status": "fullTime"
+            },
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceGVD"
+            },
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceClassic"
+            },
+            {
+                "amount": "32 000",
+                "id": "3 года",
+                "status": "correspondenceGVD"
+            },
+            {
+                "amount": "32 000",
+                "id": "3 года",
+                "status": "correspondenceClassic"
+            },
+            {
+                "amount": "25 000",
+                "id": "3 года",
+                "status": "correspondenceDistant"
+            }
+        ]
+    },
+    {
+        "name": "Экономика",
+        "description": "Прикладная информатика в экономике",
+        "direction": "Бакалавриат на базе ВО",
+        "code": "Код направления 38.03.01",
+        "prices": [
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "checked": true,
+                "status": "fullTime"
+            },
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceGVD"
+            },
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceClassic"
+            },
+            {
+                "amount": "32 000",
+                "id": "3 года",
+                "status": "correspondenceGVD"
+            },
+            {
+                "amount": "32 000",
+                "id": "3 года",
+                "status": "correspondenceClassic"
+            },
+            {
+                "amount": "25 000",
+                "id": "3 года",
+                "status": "correspondenceDistant"
+            }
+        ]
+    },
+    {
+        "name": "Экономика",
+        "description": "Мировая экономика",
+        "direction": "Бакалавриат на базе ВО",
+        "code": "Код направления 38.03.01",
+        "prices": [
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "checked": true,
+                "status": "fullTime"
+            },
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceGVD"
+            },
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceClassic"
+            },
+            {
+                "amount": "32 000",
+                "id": "3 года",
+                "status": "correspondenceGVD"
+            },
+            {
+                "amount": "32 000",
+                "id": "3 года",
+                "status": "correspondenceClassic"
+            },
+            {
+                "amount": "25 000",
+                "id": "3 года",
+                "status": "correspondenceDistant"
+            }
+        ]
+    },
+    {
+        "name": "Государственное и муниципальное управление",
+        "description": "Эффективное государственное управление",
+        "direction": "Бакалавриат на базе ВО",
+        "code": "Код направления 38.03.04",
+        "prices": [
+            {
+                "amount": "45 000",
+                "id": "2.5 года",
+                "checked": true,
+                "status": "fullTime"
+            },
+            {
+                "amount": "45 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceGVD"
+            },
+            {
+                "amount": "45 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceClassic"
+            },
+            {
+                "amount": "37 000",
+                "id": "3 года",
+                "status": "correspondenceGVD"
+            },
+            {
+                "amount": "37 000",
+                "id": "3 года",
+                "status": "correspondenceClassic"
+            },
+            {
+                "amount": "30 000",
+                "id": "3 года",
+                "status": "correspondenceDistant"
+            }
+        ]
+    },
+    {
+        "name": "Реклама и связи с общественностью",
+        "description": "Эффективное государственное управление",
+        "direction": "Бакалавриат на базе ВО",
+        "code": "Код направления 42.03.01",
+        "prices": [
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "checked": true,
+                "status": "fullTime"
+            },
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceGVD"
+            },
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceClassic"
+            },
+            {
+                "amount": "32 000",
+                "id": "3 года",
+                "status": "correspondenceGVD"
+            },
+            {
+                "amount": "32 000",
+                "id": "3 года",
+                "status": "correspondenceClassic"
+            },
+            {
+                "amount": "25 000",
+                "id": "3 года",
+                "status": "correspondenceDistant"
+            }
+        ]
+    },
+    {
+        "name": "Сервис",
+        "description": "Информационный сервис",
+        "direction": "Бакалавриат на базе ВО",
+        "code": "Код направления 43.03.01",
+        "prices": [
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "checked": true,
+                "status": "fullTime"
+            },
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceGVD"
+            },
+            {
+                "amount": "38 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceClassic"
+            },
+            {
+                "amount": "32 000",
+                "id": "3 года",
+                "status": "correspondenceGVD"
+            },
+            {
+                "amount": "32 000",
+                "id": "3 года",
+                "status": "correspondenceClassic"
+            },
+            {
+                "amount": "25 000",
+                "id": "3 года",
+                "status": "correspondenceDistant"
+            }
+        ]
+    },
+    {
+        "name": "Психология",
+        "description": "Практическая психология",
+        "direction": "Бакалавриат на базе ВО",
+        "code": "Код направления 37.03.01",
+        "prices": [
+            {
+                "amount": "45 000",
+                "id": "2.5 года",
+                "checked": true,
+                "status": "fullTime"
+            },
+            {
+                "amount": "45 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceGVD"
+            },
+            {
+                "amount": "45 000",
+                "id": "2.5 года",
+                "status": "fullTimeСorrespondenceClassic"
+            },
+            {
+                "amount": "30 000",
+                "id": "3 года",
+                "status": "fullTimeСorrespondenceDistant"
+            }
+        ]
     }
 ]

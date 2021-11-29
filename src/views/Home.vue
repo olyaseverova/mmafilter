@@ -1,6 +1,12 @@
 <template>
   <div class="filter">
-    <h1>Направления</h1>
+    <h1 class="headline">Направления</h1>
+    <input
+      class="filter__input"
+      type="text"
+      placeholder="Поиск программы"
+      @input="chooseProgram($event), upperLetter($event)"
+    />
     <ul class="directions-list list list ul">
       <li
         class="directions-list__item"
@@ -25,56 +31,60 @@
     </ul>
 
     <section class="center">
-      <aside class="programs">
-        <h2 class="programs__headline">Программы обучения</h2>
-        <ul class="programs-list radio-list list">
-          <li
-            class="programs-list__item radio-list__item"
-            v-for="program in programs"
-            :key="program.id"
-            :id="program.id"
-          >
-            <label class="programs-list__label" :id="program.id">
-              <input
-                class="radio-input programs-list__input visually-hidden"
-                type="radio"
-                name="programInput"
-                :id="program.id"
-                :value="program.name"
-                :checked="program.checked"
-                @click="changeRange($event), chooseProgram($event)"
-              />
-              <p class="radio-name programs-list__name" :id="program.id">
-                {{ program.name }}
-              </p>
-            </label>
-          </li>
-        </ul>
-        <h2 class="programs__headline">Формы обучения</h2>
-        <ul class="forms-list radio-list list">
-          <li
-            class="forms-list__item radio-list__item"
-            v-for="form in forms"
-            :key="form.id"
-            :id="form.id"
-            :class="{ none: form.none }"
-          >
-            <label class="forms-list__label" :id="form.id">
-              <input
-                class="radio-input forms-list__input visually-hidden"
-                type="radio"
-                name="formInput"
-                :id="form.name"
-                :value="form.value"
-                :checked="form.checked"
-                @click="changeRange($event), chooseProgram($event)"
-              />
-              <p class="radio-name programs-list__name" :id="form.id">
-                {{ form.name }}
-              </p>
-            </label>
-          </li>
-        </ul>
+      <div class="filter-rpgrams-forms">
+        <aside class="programs">
+          <h2 class="programs__headline">Программы обучения</h2>
+          <ul class="programs-list radio-list list">
+            <li
+              class="programs-list__item radio-list__item"
+              v-for="program in programs"
+              :key="program.id"
+              :id="program.id"
+            >
+              <label class="programs-list__label" :id="program.id">
+                <input
+                  class="radio-input programs-list__input visually-hidden"
+                  type="radio"
+                  name="programInput"
+                  :id="program.id"
+                  :value="program.name"
+                  :checked="program.checked"
+                  @click="changeRange($event), chooseProgram($event)"
+                />
+                <p class="radio-name programs-list__name" :id="program.id">
+                  {{ program.name }}
+                </p>
+              </label>
+            </li>
+          </ul>
+        </aside>
+        <aside class="forms">
+          <h2 class="programs__headline">Формы обучения</h2>
+          <ul class="forms-list radio-list list">
+            <li
+              class="forms-list__item radio-list__item"
+              v-for="form in forms"
+              :key="form.id"
+              :id="form.id"
+              :class="{ none: form.none }"
+            >
+              <label class="forms-list__label" :id="form.id">
+                <input
+                  class="radio-input forms-list__input visually-hidden"
+                  type="radio"
+                  name="formInput"
+                  :id="form.name"
+                  :value="form.value"
+                  :checked="form.checked"
+                  @click="changeRange($event), chooseProgram($event)"
+                />
+                <p class="radio-name programs-list__name" :id="form.id">
+                  {{ form.name }}
+                </p>
+              </label>
+            </li>
+          </ul>
+        </aside>
         <div class="range">
           <p class="range__budget">Срок обучения</p>
           <label for="range__label">
@@ -92,7 +102,7 @@
           </label>
           <output for="range" class="range__output">4 года</output>
         </div>
-      </aside>
+      </div>
       <ul class="subjects-list list ul">
         <li
           class="subjects-list__item"
@@ -138,6 +148,13 @@ export default {
   name: "Home",
 
   methods: {
+    upperLetter: function (event) {
+      let cap =
+        event.target.value.charAt(0).toUpperCase() +
+        event.target.value.slice(1);
+      event.target.value = cap;
+    },
+
     changeRange: function (event) {
       let rangeOutput = document.querySelector(".range__output");
       let programInputs = document.querySelectorAll(".programs-list__input");
@@ -149,10 +166,6 @@ export default {
       if (event.target.value === "Бакалавриат на базе СПО") {
         document.querySelector(".range__input").value = "5";
         rangeOutput.value = "3 года";
-      }
-      if (event.target.value === "Магистратура") {
-        document.querySelector(".range__input").value = "2";
-        rangeOutput.value = "2 года";
       }
       if (event.target.value === "Востоковедение и африканистика") {
         document.querySelector(".range__input").value = "0";
@@ -198,46 +211,120 @@ export default {
             }
           }
 
-          // if (event.target.checked && event.target.value !== "Специалитет") {
-          //   if (programInput.classList.contains("shownSpecialty")) {
-          //     console.log(programInput);
-          //     if (formItem.id === "5") {
-          //       formItem.classList.add("none");
-          //       formItem.querySelector(".forms-list__input").checked = false;
-          //     }
-          //     if (formItem.id === "6") {
-          //       formItem.classList.add("none");
-          //       formItem.querySelector(".forms-list__input").checked = false;
-          //     }
-          //     if (formItem.id === "10") {
-          //       formItem.classList.add("none");
-          //       formItem.querySelector(".forms-list__input").checked = false;
-          //     }
-          //     if (formItem.id === "11") {
-          //       formItem.classList.add("none");
-          //       formItem.querySelector(".forms-list__input").checked = false;
-          //     }
-          //     if (formItem.id === "12") {
-          //       formItem.classList.add("none");
-          //       formItem.querySelector(".forms-list__input").checked = false;
-          //     }
+          if (
+            event.target.checked &&
+            event.target.classList.contains("programs-list__input")
+          ) {
+            if (
+              (event.target.value !== "Специалитет" &&
+                programInput.classList.contains("shownSpecialty")) ||
+              (event.target.value !== "Бакалавриат на базе ВО" &&
+                programInput.classList.contains("shownbachelorVO")) ||
+              (event.target.value !== "Магистратура" &&
+                programInput.classList.contains("shownMagistracy"))
+            ) {
+              formItem.classList.add("none");
+              if (
+                formItem.id === "0" ||
+                formItem.id === "2" ||
+                formItem.id === "3" ||
+                formItem.id === "4"
+              ) {
+                formItem.classList.remove("none");
+              }
+              if (formItem.querySelector(".forms-list__input").checked) {
+                formItem
+                  .querySelector(".forms-list__input")
+                  .removeAttribute("checked");
+              }
+              if (formItem.id === "0") {
+                formItem.querySelector(".forms-list__input").checked = true;
+              }
+            }
+          }
 
-          //     if (formItem.id === "0") {
-          //       formItem.classList.add("none");
-          //       formItem.querySelector(".forms-list__input").checked = true;
-          //     }
-          //     if (formItem.id === "2") {
-          //       formItem.classList.add("none");
-          //     }
-          //     if (formItem.id === "3") {
-          //       formItem.classList.add("none");
-          //     }
-          //     if (formItem.id === "4") {
-          //       formItem.classList.add("none");
-          //     }
-          //     programInput.classList.remove("shownSpecialty");
-          //   }
-          // }
+          if (event.target.value === "Бакалавриат на базе ВО") {
+            event.target.classList.add("shownbachelorVO");
+            document.querySelector(".range__input").value = "5";
+            rangeOutput.value = "2.5 года";
+            formItem.classList.add("none");
+            if (formItem.querySelector(".forms-list__input").checked) {
+              formItem
+                .querySelector(".forms-list__input")
+                .removeAttribute("checked");
+            }
+            if (
+              formItem.id === "0" ||
+              formItem.id === "7" ||
+              formItem.id === "8" ||
+              formItem.id === "2" ||
+              formItem.id === "3" ||
+              formItem.id === "4"
+            ) {
+              formItem.classList.remove("none");
+            }
+            if (formItem.id === "0") {
+              formItem.querySelector(".forms-list__input").checked = true;
+            }
+          }
+
+          if (
+            programInput.checked &&
+            programInput.value === "Бакалавриат на базе ВО"
+          ) {
+            if (
+              event.target.id === "Заочная (ГВД)" ||
+              event.target.id === "Заочная (классика)" ||
+              event.target.id === "Заочная (дистант)"
+            ) {
+              document.querySelector(".range__input").value = "5";
+              rangeOutput.value = "3 года";
+            }
+            if (
+              event.target.id === "Очная" ||
+              event.target.id === "Очно-заочная (ГВД)" ||
+              event.target.id === "Очно-заочная (классика)"
+            ) {
+              document.querySelector(".range__input").value = "4";
+              rangeOutput.value = "2.5 года";
+            }
+          }
+
+          if (event.target.value === "Магистратура") {
+            event.target.classList.add("shownMagistracy");
+            document.querySelector(".range__input").value = "2";
+            rangeOutput.value = "2 года";
+            formItem.classList.add("none");
+            if (formItem.querySelector(".forms-list__input").checked) {
+              formItem
+                .querySelector(".forms-list__input")
+                .removeAttribute("checked");
+            }
+            if (
+              formItem.id === "0" ||
+              formItem.id === "1" ||
+              formItem.id === "4"
+            ) {
+              formItem.classList.remove("none");
+            }
+            if (formItem.id === "0") {
+              formItem.querySelector(".forms-list__input").checked = true;
+            }
+          }
+
+          if (programInput.checked && programInput.value === "Магистратура") {
+            if (
+              event.target.id === "Очная" ||
+              event.target.id === "Заочная (2 года / 2 года и 3 мес)"
+            ) {
+              document.querySelector(".range__input").value = "2";
+              rangeOutput.value = "2 года";
+            }
+            if (event.target.id === "Заочная (дистант)") {
+              document.querySelector(".range__input").value = "3";
+              rangeOutput.value = "2 года 3 мес";
+            }
+          }
 
           if (event.target.value === "Специалитет") {
             event.target.classList.add("shownSpecialty");
@@ -299,6 +386,9 @@ export default {
       let programName;
       let formValue;
 
+      let patternRegExp = new RegExp(
+        document.querySelector(".filter__input").value
+      );
       let subjectItems = document.querySelectorAll(".subjects-list__item");
       let programInputs = document.querySelectorAll(".programs-list__input");
       let formInputs = document.querySelectorAll(".forms-list__input");
@@ -371,7 +461,8 @@ export default {
             subjectName.textContent === directionContent &&
             priceItem.querySelector(".prices-list__name").id === formValue &&
             priceItem.querySelector(".prices-list__srock").id ===
-              rangeOutput.value
+              rangeOutput.value &&
+            patternRegExp.test(subjectName.textContent)
           ) {
             priceItem.classList.remove("none");
             subjectsItem.classList.remove("none");
@@ -381,7 +472,8 @@ export default {
             subjectName.textContent === directionContent &&
             priceItem.querySelector(".prices-list__name").id === formValue &&
             priceItem.querySelector(".prices-list__srock").id ===
-              rangeOutput.value
+              rangeOutput.value &&
+            patternRegExp.test(subjectName.textContent)
           ) {
             priceItem.classList.remove("none");
             subjectsItem.classList.remove("none");
@@ -391,7 +483,8 @@ export default {
             subjectDirection.textContent === programName &&
             priceItem.querySelector(".prices-list__name").id === formValue &&
             priceItem.querySelector(".prices-list__srock").id ===
-              rangeOutput.value
+              rangeOutput.value &&
+            patternRegExp.test(subjectName.textContent)
           ) {
             priceItem.classList.remove("none");
             subjectsItem.classList.remove("none");
@@ -401,7 +494,8 @@ export default {
             programName === "Любая" &&
             priceItem.querySelector(".prices-list__name").id === formValue &&
             priceItem.querySelector(".prices-list__srock").id ===
-              rangeOutput.value
+              rangeOutput.value &&
+            patternRegExp.test(subjectName.textContent)
           ) {
             priceItem.classList.remove("none");
             subjectsItem.classList.remove("none");
@@ -461,46 +555,6 @@ export default {
         { name: "Магистратура", id: 4 },
         { name: "Специалитет", id: 5 },
       ],
-
-      // forms: [
-      //   { name: "Очная", checked: true, value: "fullTime" },
-      //   { name: "Заочная", value: "correspondence", none: true },
-      //   { name: "Заочная (ГВД)", value: "correspondenceGVD" },
-      //   { name: "Заочная (классика)", value: "correspondenceClassic" },
-      //   { name: "Заочная (дистант)", value: "correspondenceDistant" },
-      //   { name: "Очная на базе СОО", value: "fullTimeCOO", none: true },
-      //   { name: "Очная на базе СПО", value: "fullTimeCPO", none: true },
-      //   {
-      //     name: "Очно-заочная (ГВД)",
-      //     value: "fullTimeСorrespondenceGVD",
-      //     none: true,
-      //   },
-      //   {
-      //     name: "Очно-заочная (классика)",
-      //     value: "fullTimeСorrespondenceClassic",
-      //     none: true,
-      //   },
-      //   {
-      //     name: "Очно-заочная (дистант)",
-      //     value: "fullTimeСorrespondenceDistant",
-      //     none: true,
-      //   },
-      //   {
-      //     name: "Очная на базе медицинского СПО",
-      //     value: "fullTimeMedCPO",
-      //     none: true,
-      //   },
-      //   {
-      //     name: "Очная на базе высшего психолого-педагогического, дефектологического и педагогического образования",
-      //     value: "fullTimeSpecial",
-      //     none: true,
-      //   },
-      //   {
-      //     name: "Очная на базе неспециального высшего образования",
-      //     value: "fullTimeNoSpecial",
-      //     none: true,
-      //   },
-      // ],
     };
   },
 };

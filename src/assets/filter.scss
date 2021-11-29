@@ -1,24 +1,82 @@
 .filter {
     display: block;
-    width: 1440px;
-    margin: 100px auto;
+    width: 345px;
+    margin: 50px auto;
     padding: 0;
+
+    @media (min-width: $tablet-width) {
+        width: 708px;
+    }
+
+    @media (min-width: $desktop-width) {
+        height: 1000px;
+        width: 1440px;
+        overflow-y: hidden;
+    }
+}
+
+.filter__input {
+    width: 325px;
+    height: 30px;
+    padding: 10px 15px;
+    margin: 0 0 20px 0;
+    font-size: 14px;
+    border: 1px solid black;
+    font-family: "Montserrat", sans-serif;
+
+    @media (min-width: $tablet-width) {
+        font-size: 16px;
+        height: 40px;
+        padding: 10px 20px;
+    }
+
+    &::placeholder {
+        color: grey;
+        opacity: 1;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    &:focus::placeholder {
+        opacity: 0;
+    }
+
+    &:hover {
+        border: 2px solid black;
+        background-color: lightcoral;
+
+        &::placeholder {
+            color: white;
+        }
+    }
+
+    &::first-letter {
+        text-transform: uppercase;
+    }
 }
 
 .directions-list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 0 50px 0;
+    margin: 0 0 25px 0;
+
+    @media (min-width: $tablet-width) {
+        margin: 0 0 50px 0;
+    }
 
     .directions-list__item {
         margin: 0 10px 10px 0;
+        border-radius: 50px;
+        border: 1px solid black;
 
         .directions-list__name {
-            padding: 10px 20px;
-            border-radius: 50px;
-            outline: 1px solid black;
+            padding: 7px 10px;
             border: none;
+            border-radius: 50px;
             font-family: "Montserrat", sans-serif;
+
+            @media (min-width: $tablet-width) {
+                padding: 10px 20px;
+            }
 
             &:hover,
             &:focus {
@@ -38,63 +96,102 @@
 .center {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (min-width: $tablet-width) {
+    .forms {
+        width: 370px;
+    }
+}
+
+.filter-rpgrams-forms {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (min-width: $desktop-width) {
+        display: block;
+        width: 340px;
+    }
+}
+
+.programs__headline {
+    margin: 0 0 15px 0;
+
+    @media (min-width: $tablet-width) {
+        margin: 0 0 30px 0;
+    }
 }
 
 .programs {
     display: block;
-    width: 270px;
+    margin: 0 50px 0 0;
 
-    .programs__headline {
-        margin: 0 0 30px 0;
+    @media (min-width: $tablet-width) {
+        margin-bottom: 20px;
+    }
+}
+
+.radio-list {
+    margin: 0 0 25px 0;
+    padding: 0;
+
+    @media (min-width: $tablet-width) {
+        margin: 0 0 50px 0;
     }
 
-    .radio-list {
-        margin: 0 0 50px 0;
-        padding: 0;
+    .radio-list__item {
+        margin: 0 0 20px 0;
 
-        .radio-list__item {
-            margin: 0 0 20px 0;
+        &:last-of-type {
+            margin: 0;
+        }
 
-            &:last-of-type {
-                margin: 0;
-            }
+        .radio-name {
+            position: relative;
+            margin: 0;
+            padding: 0 0 0 20px;
 
-            .radio-name {
-                position: relative;
-                margin: 0;
+            @media (min-width: $tablet-width) {
                 padding: 0 0 0 30px;
-
-                &::before {
-                    position: absolute;
-                    content: "";
-                    width: 12px;
-                    height: 12px;
-
-                    top: 3px;
-                    left: 0;
-
-                    border-radius: 50%;
-                    outline: 1px solid black;
-                }
-
-                &:hover::before,
-                &:focus::before {
-                    background-color: lightcoral;
-                }
-
-                &:active::before {
-                    outline: none;
-                }
             }
 
-            .radio-input:checked + .radio-name::before {
-                background-color: brown;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 12px;
+                height: 12px;
+
+                top: 3px;
+                left: 0;
+
+                border-radius: 50%;
+                border: 1px solid black;
             }
+
+            &:hover::before,
+            &:focus::before {
+                background-color: lightcoral;
+            }
+
+            &:active::before {
+                outline: none;
+            }
+        }
+
+        .radio-input:checked + .radio-name::before {
+            background-color: brown;
         }
     }
 }
 
 .range {
+    margin: 0 0 30px 0;
+
+    @media (min-width: $desktop-width) {
+        margin: 0;
+    }
+
     .range__budget {
         margin: 0 0 15px 0;
     }
@@ -112,6 +209,13 @@
         background-color: brown;
     }
 
+    .range__input::-moz-range-track {
+        height: 10px;
+        border-radius: 10px;
+        -webkit-appearance: none;
+        background-color: brown;
+    }
+
     .range__input::-webkit-slider-thumb {
         width: 15px;
         height: 15px;
@@ -123,7 +227,23 @@
 
         &:hover {
             background-color: white;
-            outline: 1px solid black;
+            border: 1px solid black;
+        }
+    }
+
+    .range__input::-moz-range-thumb {
+        width: 15px;
+        height: 15px;
+        margin-top: -2px;
+        border-radius: 50%;
+        -webkit-appearance: none;
+        background-color: black;
+        transition: 0.2s;
+        border: none;
+
+        &:hover {
+            background-color: white;
+            border: 1px solid black;
         }
     }
 }
@@ -131,13 +251,32 @@
 .subjects-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 1100px;
 
+    @media (min-width: $desktop-width) {
+        // height: 1300px;
+        min-height: 400px;
+        overflow-y: scroll;
+    }
+
     .subjects-list__item {
-        height: 180px;
-        margin: 0 20px 20px 0;
+        width: 100%;
         padding: 20px 27px;
+        margin: 0 0 20px 0;
         background-color: papayawhip;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        @media (min-width: $tablet-width) {
+            width: 340px;
+        }
+
+        @media (min-width: $desktop-width) {
+            height: 230px;
+        }
 
         .subjects-list__name {
             margin: 0 0 10px 0;
