@@ -41,7 +41,7 @@
               :key="program.id"
               :id="program.id"
             >
-              <label class="programs-list__label" :id="program.id">
+              <label class="programs-list__label radio__label" :id="program.id">
                 <input
                   class="radio-input programs-list__input visually-hidden"
                   type="radio"
@@ -51,6 +51,7 @@
                   :checked="program.checked"
                   @click="changeRange($event), chooseProgram($event)"
                 />
+                <span class="radio__check"></span>
                 <p class="radio-name programs-list__name" :id="program.id">
                   {{ program.name }}
                 </p>
@@ -68,7 +69,7 @@
               :id="form.id"
               :class="{ none: form.none }"
             >
-              <label class="forms-list__label" :id="form.id">
+              <label class="forms-list__label radio__label" :id="form.id">
                 <input
                   class="radio-input forms-list__input visually-hidden"
                   type="radio"
@@ -78,6 +79,7 @@
                   :checked="form.checked"
                   @click="changeRange($event), chooseProgram($event)"
                 />
+                <span class="radio__check"></span>
                 <p class="radio-name programs-list__name" :id="form.id">
                   {{ form.name }}
                 </p>
@@ -86,7 +88,7 @@
           </ul>
         </aside>
         <div class="range">
-          <p class="range__budget">Срок обучения</p>
+          <h3 class="range__budget programs__headline">Срок обучения</h3>
           <label for="range__label">
             <input
               class="range__input"
@@ -109,6 +111,7 @@
           v-for="subject in subjects"
           :key="subject.id"
           :id="subject.id"
+          :class="{ none: subject.none }"
         >
           <h3 class="subjects-list__name" :id="subject.id">
             {{ subject.name }}
@@ -118,7 +121,7 @@
             {{ subject.direction }}
           </p>
           <p class="subjects-list__code up">{{ subject.code }}</p>
-          <div class="flex">
+          <div class="price flex">
             <p class="price-headline">Цена:</p>
             <ul class="prices-list list" :id="subject.id">
               <li
@@ -510,6 +513,14 @@ export default {
       if (store.state.subjects) {
         store.state.subjects.forEach((p, i) => {
           p.id = i;
+          if (
+            p.direction === "Бакалавриат на базе СПО" ||
+            p.direction === "Магистратура" ||
+            p.direction === "Специалитет" ||
+            p.name === "Востоковедение и африканистика"
+          ) {
+            p.none = true;
+          }
         });
       }
       return store.state.subjects;
@@ -522,40 +533,32 @@ export default {
       }
       return store.state.forms;
     },
+    directions() {
+      if (store.state.directions) {
+        store.state.directions.forEach((p, i) => {
+          p.id = i;
+        });
+      }
+      return store.state.directions;
+    },
+    programs() {
+      if (store.state.programs) {
+        store.state.programs.forEach((p, i) => {
+          p.id = i;
+        });
+      }
+      return store.state.programs;
+    },
   },
   async mounted() {
     store.dispatch("fetchSubjects");
     store.dispatch("fetchForms");
+    store.dispatch("fetchDirections");
+    store.dispatch("fetchPrograms");
   },
 
   data() {
-    return {
-      directions: [
-        {
-          name: "Все направления",
-          checked: true,
-          id: 0,
-        },
-        { name: "Педагогическое образование", id: 1 },
-        { name: "Менеджмент", id: 2 },
-        { name: "Экономика", id: 3 },
-        { name: "Психология", id: 4 },
-        { name: "Востоковедение и африканистика", id: 5 },
-        { name: "Государственное и муниципальное управление", id: 6 },
-        { name: "Лингвистика", id: 7 },
-        { name: "Сервис", id: 8 },
-        { name: "Реклама и связи с общественностью", id: 9 },
-      ],
-
-      programs: [
-        { name: "Любая", checked: true, id: 0 },
-        { name: "Бакалавриат на базе СОО", id: 1 },
-        { name: "Бакалавриат на базе СПО", id: 2 },
-        { name: "Бакалавриат на базе ВО", id: 3 },
-        { name: "Магистратура", id: 4 },
-        { name: "Специалитет", id: 5 },
-      ],
-    };
+    return {};
   },
 };
 </script>

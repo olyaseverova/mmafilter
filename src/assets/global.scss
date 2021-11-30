@@ -22,7 +22,7 @@ body {
 
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
-  
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
   }
@@ -31,11 +31,6 @@ body {
 .ul {
   margin: 0;
   padding: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 .list {
@@ -64,4 +59,14 @@ img {
 
 .headline {
   font-size: 30px;
+  margin: 0 0 25px 0;
+  font-family: "Montserrat-Bold", sans-serif;
+  
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+  }
+}
+
+.bold {
+  font-weight: bold;
 }
