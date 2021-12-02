@@ -38,6 +38,7 @@
             <li
               class="programs-list__item radio-list__item"
               v-for="program in programs"
+              :class="{ none: program.none }"
               :key="program.id"
               :id="program.id"
             >
@@ -49,7 +50,11 @@
                   :id="program.id"
                   :value="program.name"
                   :checked="program.checked"
-                  @click="changeRange($event), chooseProgram($event)"
+                  @click="
+                    checkoutBachelor($event),
+                      changeRange($event),
+                      chooseProgram($event)
+                  "
                 />
                 <span class="radio__check"></span>
                 <p class="radio-name programs-list__name" :id="program.id">
@@ -140,6 +145,20 @@
           </div>
         </li>
       </ul>
+      <button
+        type="button"
+        class="showButton showMoreSubjects"
+        @click="chooseProgram"
+      >
+        Ещё программы
+      </button>
+      <button
+        type="button"
+        class="showButton showLessSubjects none"
+        @click="showLessSubjects"
+      >
+        Скрыть программы
+      </button>
     </section>
   </div>
 </template>
@@ -151,11 +170,105 @@ export default {
   name: "Home",
 
   methods: {
+    // showMoreSubjects: function (event) {
+    //   let minId = 1000;
+    //   let stepId = 0;
+    //   let maxId = 0;
+    //   let subjectItems = document.querySelectorAll(".subjects-list__item");
+    //   let showLessButton = document.querySelector(".showLessSubjects");
+    //   subjectItems.forEach(function (subjectItem) {
+    //     if (
+    //       subjectItem.classList.contains("none") &&
+    //       parseInt(subjectItem.id) < minId
+    //     ) {
+    //       minId = subjectItem.id;
+    //     }
+    //   });
+    //   stepId = parseInt(minId) + 8;
+    //   subjectItems.forEach(function (subjectItem) {
+    //     if (
+    //       parseInt(subjectItem.id) >= minId &&
+    //       parseInt(subjectItem.id) <= stepId
+    //     ) {
+    //       subjectItem.classList.remove("none");
+    //     }
+    //     if (parseInt(subjectItem.id) > maxId) {
+    //       maxId = parseInt(subjectItem.id);
+    //     }
+    //   });
+    //   subjectItems.forEach(function (subjectItem) {
+    //     if (
+    //       parseInt(subjectItem.id) === maxId &&
+    //       !subjectItem.classList.contains("none")
+    //     ) {
+    //       event.target.classList.add("none");
+    //       showLessButton.classList.remove("none");
+    //     }
+    //   });
+    // },
+
+    // showLessSubjects: function (event) {
+    //   let showMoreSubjects = document.querySelector(".showMoreSubjects");
+    //   let subjectItems = document.querySelectorAll(".subjects-list__item");
+    //   subjectItems.forEach(function (subjectItem) {
+    //     if (parseInt(subjectItem.id) > 8) {
+    //       subjectItem.classList.add("none");
+    //     }
+    //   });
+    //   event.target.classList.add("none");
+    //   showMoreSubjects.classList.remove("none");
+    // },
+
     upperLetter: function (event) {
       let cap =
         event.target.value.charAt(0).toUpperCase() +
         event.target.value.slice(1);
       event.target.value = cap;
+    },
+
+    checkoutBachelor: function (event) {
+      let programItems = document.querySelectorAll(".programs-list__item");
+      let programInputs = document.querySelectorAll(".programs-list__input");
+      programItems.forEach(function (programItem) {
+        programInputs.forEach(function (programInput) {
+          if (event.target.value === "Бакалавриат") {
+            if (event.target.id === programItem.id) {
+              programItem.classList.add("none");
+            }
+            if (
+              programInput.value === "Бакалавриат на базе СОО" ||
+              programInput.value === "Бакалавриат на базе СПО" ||
+              (programInput.value === "Бакалавриат на базе ВО" &&
+                programInput.id === programItem.id)
+            ) {
+              programItem.classList.remove("none");
+            }
+            if (programInput.value === "Бакалавриат на базе СОО") {
+              programInput.checked = true;
+            }
+          }
+          if (
+            event.target.value === "Любая" ||
+            event.target.value === "Магистратура" ||
+            event.target.value === "Специалитет"
+          ) {
+            if (
+              (programInput.value === "Бакалавриат на базе СОО" ||
+                programInput.value === "Бакалавриат на базе СПО" ||
+                programInput.value === "Бакалавриат на базе ВО") &&
+              programInput.id === programItem.id
+            ) {
+              programItem.classList.add("none");
+            }
+            if (
+              programInput.value === "Бакалавриат" &&
+              programInput.id === programItem.id
+            ) {
+              programItem.classList.remove("none");
+            }
+          }
+        });
+      });
     },
 
     changeRange: function (event) {
@@ -388,6 +501,7 @@ export default {
       let directionContent;
       let programName;
       let formValue;
+      let subjectsQuantity = [];
 
       let patternRegExp = new RegExp(
         document.querySelector(".filter__input").value
@@ -455,8 +569,8 @@ export default {
         let subjectDirection = subjectsItem.querySelector(
           ".subjects-list__direction"
         );
-
         let priceItems = subjectsItem.querySelectorAll(".prices-list__item");
+
         priceItems.forEach(function (priceItem) {
           priceItem.classList.add("none");
           if (
@@ -502,9 +616,19 @@ export default {
           ) {
             priceItem.classList.remove("none");
             subjectsItem.classList.remove("none");
+            subjectsQuantity.push(subjectsItem);
           }
         });
       });
+      // subjectItems.forEach(function (subjectsItem) {
+      // if (subjectsQuantity.length > 9) {
+      //   console.log(subjectsQuantity.length);
+      //   let x;
+      //   if (x > 9 && x <= subjectsQuantity.length) {
+      //     subjectsQuantity[x].classList.add("none");
+      //   }
+      // }
+      // });
     },
   },
 
@@ -517,6 +641,7 @@ export default {
             p.direction === "Бакалавриат на базе СПО" ||
             p.direction === "Магистратура" ||
             p.direction === "Специалитет" ||
+            p.direction === "Бакалавриат на базе ВО" ||
             p.name === "Востоковедение и африканистика"
           ) {
             p.none = true;
@@ -545,6 +670,13 @@ export default {
       if (store.state.programs) {
         store.state.programs.forEach((p, i) => {
           p.id = i;
+          if (
+            p.name === "Бакалавриат на базе СОО" ||
+            p.name === "Бакалавриат на базе СПО" ||
+            p.name === "Бакалавриат на базе ВО"
+          ) {
+            p.none = true;
+          }
         });
       }
       return store.state.programs;
