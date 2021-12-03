@@ -148,14 +148,14 @@
       <button
         type="button"
         class="showButton showMoreSubjects"
-        @click="chooseProgram"
+        @click="changeRange($event), chooseProgram($event)"
       >
         Ещё программы
       </button>
       <button
         type="button"
         class="showButton showLessSubjects none"
-        @click="showLessSubjects"
+        @click="changeRange($event), chooseProgram($event)"
       >
         Скрыть программы
       </button>
@@ -170,55 +170,6 @@ export default {
   name: "Home",
 
   methods: {
-    // showMoreSubjects: function (event) {
-    //   let minId = 1000;
-    //   let stepId = 0;
-    //   let maxId = 0;
-    //   let subjectItems = document.querySelectorAll(".subjects-list__item");
-    //   let showLessButton = document.querySelector(".showLessSubjects");
-    //   subjectItems.forEach(function (subjectItem) {
-    //     if (
-    //       subjectItem.classList.contains("none") &&
-    //       parseInt(subjectItem.id) < minId
-    //     ) {
-    //       minId = subjectItem.id;
-    //     }
-    //   });
-    //   stepId = parseInt(minId) + 8;
-    //   subjectItems.forEach(function (subjectItem) {
-    //     if (
-    //       parseInt(subjectItem.id) >= minId &&
-    //       parseInt(subjectItem.id) <= stepId
-    //     ) {
-    //       subjectItem.classList.remove("none");
-    //     }
-    //     if (parseInt(subjectItem.id) > maxId) {
-    //       maxId = parseInt(subjectItem.id);
-    //     }
-    //   });
-    //   subjectItems.forEach(function (subjectItem) {
-    //     if (
-    //       parseInt(subjectItem.id) === maxId &&
-    //       !subjectItem.classList.contains("none")
-    //     ) {
-    //       event.target.classList.add("none");
-    //       showLessButton.classList.remove("none");
-    //     }
-    //   });
-    // },
-
-    // showLessSubjects: function (event) {
-    //   let showMoreSubjects = document.querySelector(".showMoreSubjects");
-    //   let subjectItems = document.querySelectorAll(".subjects-list__item");
-    //   subjectItems.forEach(function (subjectItem) {
-    //     if (parseInt(subjectItem.id) > 8) {
-    //       subjectItem.classList.add("none");
-    //     }
-    //   });
-    //   event.target.classList.add("none");
-    //   showMoreSubjects.classList.remove("none");
-    // },
-
     upperLetter: function (event) {
       let cap =
         event.target.value.charAt(0).toUpperCase() +
@@ -513,6 +464,8 @@ export default {
         ".directions-list__input"
       );
       let rangeOutput = document.querySelector(".range__output");
+      let showMoreSubjects = document.querySelector(".showMoreSubjects");
+      let showLessSubjects = document.querySelector(".showLessSubjects");
 
       if (event.target.classList.contains("range__input")) {
         if (event.target.value === "0") {
@@ -620,15 +573,26 @@ export default {
           }
         });
       });
-      // subjectItems.forEach(function (subjectsItem) {
-      // if (subjectsQuantity.length > 9) {
-      //   console.log(subjectsQuantity.length);
-      //   let x;
-      //   if (x > 9 && x <= subjectsQuantity.length) {
-      //     subjectsQuantity[x].classList.add("none");
-      //   }
-      // }
-      // });
+      if (subjectsQuantity.length > 9) {
+        showMoreSubjects.classList.remove("none");
+        subjectsQuantity.forEach(function (subject) {
+          if (subject.id > 8) {
+            subject.classList.add("none");
+            showLessSubjects.classList.add("none");
+          }
+          if (event.target.classList.contains("showMoreSubjects")) {
+            subject.classList.remove("none");
+            event.target.classList.add("none");
+            showLessSubjects.classList.remove("none");
+          }
+          if (event.target.classList.contains("showLessSubjects")) {
+            event.target.classList.add("none");
+            showMoreSubjects.classList.remove("none");
+          }
+        });
+      } else {
+        showMoreSubjects.classList.add("none");
+      }
     },
   },
 
@@ -642,7 +606,8 @@ export default {
             p.direction === "Магистратура" ||
             p.direction === "Специалитет" ||
             p.direction === "Бакалавриат на базе ВО" ||
-            p.name === "Востоковедение и африканистика"
+            p.name === "Востоковедение и африканистика" ||
+            p.id > 8
           ) {
             p.none = true;
           }
