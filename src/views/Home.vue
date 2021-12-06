@@ -31,7 +31,7 @@
     </ul>
 
     <section class="center">
-      <div class="filter-rpgrams-forms">
+      <div class="filter-programs-forms">
         <aside class="programs">
           <h2 class="programs__headline">Программы обучения</h2>
           <ul class="programs-list radio-list list">
@@ -148,14 +148,14 @@
       <button
         type="button"
         class="showButton showMoreSubjects"
-        @click="changeRange($event), chooseProgram($event)"
+        @click="chooseProgram"
       >
         Ещё программы
       </button>
       <button
         type="button"
         class="showButton showLessSubjects none"
-        @click="changeRange($event), chooseProgram($event)"
+        @click="chooseProgram"
       >
         Скрыть программы
       </button>
@@ -536,6 +536,7 @@ export default {
           ) {
             priceItem.classList.remove("none");
             subjectsItem.classList.remove("none");
+            subjectsQuantity.push(subjectsItem);
           }
           if (
             programName === "Любая" &&
@@ -547,6 +548,7 @@ export default {
           ) {
             priceItem.classList.remove("none");
             subjectsItem.classList.remove("none");
+            subjectsQuantity.push(subjectsItem);
           }
           if (
             directionContent === "Все направления" &&
@@ -558,6 +560,7 @@ export default {
           ) {
             priceItem.classList.remove("none");
             subjectsItem.classList.remove("none");
+            subjectsQuantity.push(subjectsItem);
           }
           if (
             directionContent === "Все направления" &&
@@ -573,23 +576,20 @@ export default {
           }
         });
       });
+
       if (subjectsQuantity.length > 9) {
         showMoreSubjects.classList.remove("none");
-        subjectsQuantity.forEach(function (subject) {
-          if (subject.id > 8) {
-            subject.classList.add("none");
+        for (let i = 0; i < subjectsQuantity.length; i++) {
+          if (i > 8 && !event.target.classList.contains("showMoreSubjects")) {
+            subjectsQuantity[i].classList.add("none");
             showLessSubjects.classList.add("none");
           }
-          if (event.target.classList.contains("showMoreSubjects")) {
-            subject.classList.remove("none");
+          if (i > 8 && event.target.classList.contains("showMoreSubjects")) {
+            subjectsQuantity[i].classList.remove("none");
             event.target.classList.add("none");
             showLessSubjects.classList.remove("none");
           }
-          if (event.target.classList.contains("showLessSubjects")) {
-            event.target.classList.add("none");
-            showMoreSubjects.classList.remove("none");
-          }
-        });
+        }
       } else {
         showMoreSubjects.classList.add("none");
       }

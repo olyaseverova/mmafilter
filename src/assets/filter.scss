@@ -23,7 +23,7 @@
     border: none;
     font-size: 14px;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 8px $rgba-black;
     font-family: "Montserrat", sans-serif;
 
     @media (min-width: $tablet-width) {
@@ -37,7 +37,7 @@
     }
 
     &::placeholder {
-        color: #777;
+        color: $gray;
         opacity: 1;
         font-family: "Montserrat", sans-serif;
     }
@@ -49,13 +49,12 @@
     &:hover,
     &:focus {
         outline: none;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+        box-shadow: 0 5px 15px $rgba-black-12;
     }
 }
 
 .directions-list {
-    display: flex;
-    flex-wrap: wrap;
+    @extend %flex-wrap;
     margin: 0 0 25px 0;
 
     @media (min-width: $tablet-width) {
@@ -65,9 +64,8 @@
     .directions-list__item {
         width: 100%;
         margin: 0 0 10px 0;
-        color: #373737;
         border-radius: 3px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+        box-shadow: 0 5px 15px $rgba-black-12;
 
         @media (min-width: $tablet-width) {
             width: fit-content;
@@ -87,33 +85,31 @@
             &:hover,
             &:focus {
                 outline: none;
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+                box-shadow: 0 5px 15px $rgba-black-12;
             }
 
             &:active {
-                color: #0064b0;
-                outline: 2px solid #0064b0;
-                background-color: white;
+                color: $blue;
+                outline: 2px solid $blue;
+                background-color: $white;
             }
         }
 
         .directions-list__input:checked + .directions-list__name {
-            color: white;
-            background-color: #39f;
+            color: $white;
+            background-color: $light-blue;
         }
 
         .directions-list__input:checked:focus + .directions-list__name,
         .directions-list__input:checked:hover + .directions-list__name {
-            background-color: #0064b0;
+            background-color: $blue;
         }
     }
 }
 
 .center {
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    @extend %flex-wrap-space;
     padding: 0 0 100px 0;
 }
 
@@ -128,9 +124,8 @@
     }
 }
 
-.filter-rpgrams-forms {
-    display: flex;
-    flex-wrap: wrap;
+.filter-programs-forms {
+    @extend %flex-wrap;
 
     @media (min-width: $tablet-width) {
         width: 708px;
@@ -196,11 +191,11 @@
             height: 16px;
             margin: 3px 0 0 0;
             border-radius: 50%;
-            background-color: #e6e6e6;
+            background-color: $light-gray;
         }
 
         .radio-input:checked + .radio__check {
-            background-color: #ef454a;
+            background-color: $red-4a;
 
             &::before {
                 position: absolute;
@@ -212,7 +207,7 @@
                 left: 50%;
 
                 border-radius: 50%;
-                background-color: white;
+                background-color: $white;
                 transform: translate(-50%, -50%);
             }
         }
@@ -250,28 +245,28 @@
         height: 10px;
         border-radius: 10px;
         -webkit-appearance: none;
-        background-color: #ebeff2;
+        background-color: $light-gray-f2;
     }
 
     .range__input::-moz-range-track {
         height: 3px;
         border-radius: 10px;
         -webkit-appearance: none;
-        background-color: #ebeff2;
+        background-color: $light-gray-f2;
     }
 
     .range__input::-webkit-slider-thumb {
         width: 15px;
         height: 15px;
         margin-top: -2px;
+        transition: 0.2s;
         border-radius: 50%;
         -webkit-appearance: none;
-        background-color: #777;
-        transition: 0.2s;
+        background-color: $gray;
 
         &:hover {
-            background-color: white;
-            border: 1px solid #777;
+            background-color: $white;
+            border: 1px solid $gray;
         }
     }
 
@@ -281,29 +276,27 @@
         margin-top: -2px;
         border-radius: 50%;
         -webkit-appearance: none;
-        background-color: #777;
+        background-color: $gray;
         transition: 0.2s;
         border: none;
 
         &:hover {
-            background-color: white;
-            border: 1px solid #777;
+            background-color: $white;
+            border: 1px solid $gray;
         }
     }
 
     .range__input:focus::-webkit-slider-runnable-track {
-        background-color: #cdcdcd;
+        background-color: $light-gray-cd;
     }
 
     .range__input:focus::-moz-range-track {
-        background-color: #cdcdcd;
+        background-color: $light-gray-cd;
     }
 }
 
 .subjects-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @extend %flex-wrap-space;
     width: 1100px;
 
     @media (min-width: $desktop-width) {
@@ -316,15 +309,15 @@
         width: 100%;
         padding: 20px 20px;
         margin: 0 0 20px 0;
-        color: white;
+        color: $white;
         border-radius: 10px;
-        background-color: #ef454a;
+        background-color: $red-4a;
 
         &:hover {
-            background-color: #ed2e33;
+            background-color: $red-33;
 
             .price {
-                color: #39f;
+                color: $light-blue;
             }
         }
 
@@ -390,30 +383,36 @@
     height: 45px;
 
     top: 100%;
-    transform: translateY(-100%);
-    left: 700px;
-    color: white;
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+    color: $white;
     border: none;
     border-radius: 3px;
-    background-color: #39f;
+    background-color: $light-blue;
     transition: 0.2s ease;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
-
-    &:hover,
-    &:focus {
-        background-color: #0064b0;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
-    }
-
-    &:active {
-        color: #0064b0;
-        border: 2px solid #0064b0;
-        background-color: white;
-    }
+    box-shadow: 0 5px 15px $rgba-black-12;
 
     @media (min-width: $tablet-width) {
         font-size: 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+        left: 710px;
+        transform: translate(0, -100%);
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $blue;
+        box-shadow: 0 5px 15px $rgba-black-12;
+    }
+
+    &:active {
+        color: $blue;
+        border: 2px solid $blue;
+        background-color: $white;
     }
 }

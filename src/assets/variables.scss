@@ -1,20 +1,20 @@
-$color-white: #ffffff;
-$color-black: #000000;
+$white: #ffffff;
+$gray: #777;
+$light-gray: #e6e6e6;
+$light-gray-f2: #ebeff2;
+$light-gray-cd: #cdcdcd;
+$dark-gray: #373737;
+$blue: #0064b0;
+$light-blue: #39f;
+$red-4a: #ef454a;
+$red-33: #ed2e33;
 
+$rgba-black: rgba(0, 0, 0, 0.08);
+$rgba-black-12: rgba(0, 0, 0, 0.12);
 
 %flex-wrap {
 	display: flex;
 	flex-wrap: wrap;
-}
-
-%flex-space {
-	display: flex;
-	justify-content: space-between;
-}
-
-%wrap-space {
-	flex-wrap: wrap;
-	justify-content: space-between;
 }
 
 %flex-wrap-space {
@@ -29,7 +29,6 @@ $desktop-width: 1440px;
 @font-face {
 	font-family: "Montserrat";
 	src: url(../fonts/Montserrat-Medium.ttf);
-
 }
 @font-face {
 	font-family: "Montserrat-Bold";
