@@ -1,7 +1,11 @@
 [
     {
-        "name": "Очная",
+        "name": "Любая",
         "checked": true,
+        "value": "any"
+    },
+    {
+        "name": "Очная",
         "value": "fullTime"
     },
     {

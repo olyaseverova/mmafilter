@@ -6,38 +6,38 @@
         "code": "Код направления 45.03.02",
         "prices": [
             {
-                "amount": "58 500",
+                "amount": "58 500 Очное 4 года",
                 "id": "4 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "78 000",
+                "amount": "78 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "39 000",
+                "amount": "39 000 Заочное (ГВД) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "50 000",
+                "amount": "50 000 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "39 000",
+                "amount": "39 000 Заочное (классика) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "50 000",
+                "amount": "50 000 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "29 000",
+                "amount": "29 000 Заочное (дистант) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceDistant"
             }
@@ -50,38 +50,38 @@
         "code": "Код направления 44.03.01",
         "prices": [
             {
-                "amount": "58 500",
+                "amount": "58 500 Очное 4 года",
                 "id": "4 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "78 000",
+                "amount": "78 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 400",
+                "amount": "32 400 Заочное (ГВД) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "30 000",
+                "amount": "30 000 Заочное (классика) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "38 600",
+                "amount": "38 600 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "30 000",
+                "amount": "30 000 Заочное (дистант) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceDistant"
             }
@@ -94,38 +94,38 @@
         "code": "Код направления 44.03.01",
         "prices": [
             {
-                "amount": "52 500",
+                "amount": "52 500 Очное 4 года",
                 "id": "4 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "70 000",
+                "amount": "70 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "37 000",
+                "amount": "37 000 Заочное (ГВД) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "47 000",
+                "amount": "47 000 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "37 000",
+                "amount": "37 000 Заочное (классика) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "47 000",
+                "amount": "47 000  Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000  Заочное (дистант) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceDistant"
             }
@@ -138,38 +138,38 @@
         "code": "Код направления 44.03.01",
         "prices": [
             {
-                "amount": "48 500",
+                "amount": "48 500 Очное 4 года",
                 "id": "4 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "64 000",
+                "amount": "64 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (классика) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceDistant"
             }
@@ -182,38 +182,38 @@
         "code": "Код направления 44.03.01",
         "prices": [
             {
-                "amount": "48 500",
+                "amount": "48 500 Очное 4 года",
                 "id": "4 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "64 000",
+                "amount": "64 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (классика) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceDistant"
             }
@@ -226,38 +226,38 @@
         "code": "Код направления 43.03.01",
         "prices": [
             {
-                "amount": "50 000",
+                "amount": "50 000 Очное 4 года",
                 "id": "4 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "65 000",
+                "amount": "65 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (классика) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceDistant"
             }
@@ -270,38 +270,38 @@
         "code": "Код направления 43.03.01",
         "prices": [
             {
-                "amount": "50 000",
+                "amount": "50 000 Очное 4 года",
                 "id": "4 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "65 000",
+                "amount": "65 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (классика) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (классика) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceDistant"
             }
@@ -314,38 +314,38 @@
         "code": "Код направления 38.03.02",
         "prices": [
             {
-                "amount": "50 000",
+                "amount": "50 000 Очное 4 года",
                 "id": "4 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "65 000",
+                "amount": "65 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (классика) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceDistant"
             }
@@ -358,38 +358,38 @@
         "code": "Код направления 38.03.02",
         "prices": [
             {
-                "amount": "50 000",
+                "amount": "50 000 Очное 4 года",
                 "id": "4 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "65 000",
+                "amount": "65 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500  Заочное (ГВД) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "30 000",
+                "amount": "30 000 Заочное (классика) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "38 600",
+                "amount": "38 600 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "30 000",
+                "amount": "30 000 Заочное (дистант) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceDistant"
             }
@@ -402,38 +402,38 @@
         "code": "Код направления 38.03.02",
         "prices": [
             {
-                "amount": "50 000",
+                "amount": "50 000 Очное 4 года",
                 "id": "4 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "65 000",
+                "amount": "65 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (классика) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceDistant"
             }
@@ -446,38 +446,38 @@
         "code": "Код направления 38.03.01",
         "prices": [
             {
-                "amount": "50 000",
+                "amount": "50 000 Очное 4 года",
                 "id": "4 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "65 000",
+                "amount": "65 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (классика) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceDistant"
             }
@@ -490,38 +490,38 @@
         "code": "Код направления 38.03.01",
         "prices": [
             {
-                "amount": "50 000",
+                "amount": "50 000 Очное 4 года",
                 "id": "4 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "65 000",
+                "amount": "65 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (классика) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000  Заочное (дистант) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceDistant"
             }
@@ -534,38 +534,38 @@
         "code": "Код направления 38.03.01",
         "prices": [
             {
-                "amount": "50 000",
+                "amount": "50 000 Очное 4 года",
                 "id": "4 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "65 000",
+                "amount": "65 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (классика) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceDistant"
             }
@@ -578,38 +578,38 @@
         "code": "Код направления 38.03.01",
         "prices": [
             {
-                "amount": "50 000",
+                "amount": "50 000 Очное 4 года",
                 "id": "4 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "65 000",
+                "amount": "65 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (классика) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceDistant"
             }
@@ -622,38 +622,38 @@
         "code": "Код направления 37.03.01",
         "prices": [
             {
-                "amount": "58 500",
+                "amount": "58 500 Очное 4 года",
                 "id": "4 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "78 000",
+                "amount": "78 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (классика) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (классика) 4.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "30 000",
+                "amount": "30 000 Заочное (дистант) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceDistant"
             }
@@ -666,12 +666,12 @@
         "code": "Код направления 58.03.01",
         "prices": [
             {
-                "amount": "98 800",
+                "amount": "98 800 Очное День",
                 "id": "День",
                 "status": "fullTime"
             },
             {
-                "amount": "58 500",
+                "amount": "58 500 Очное Вечер",
                 "id": "Вечер",
                 "status": "fullTime"
             }
@@ -684,38 +684,38 @@
         "code": "Код направления 38.03.04",
         "prices": [
             {
-                "amount": "55 000",
+                "amount": "55 000 Очное 4 года",
                 "id": "4 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "73 000",
+                "amount": "73 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (классика) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "41 000",
+                "amount": "41 000 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "30 000",
+                "amount": "30 000 Заочное (дистант) 4.5 года",
                 "id": "4.5 года",
                 "status": "correspondenceDistant"
             }
@@ -728,22 +728,22 @@
         "code": "Код направления 45.04.02",
         "prices": [
             {
-                "amount": "57 200",
+                "amount": "57 200 Очное 2 года",
                 "id": "2 года",
                 "status": "fullTime"
             },
             {
-                "amount": "53 500",
+                "amount": "53 500 Заочное 2 года и 3 мес",
                 "id": "2 года 3 мес",
                 "status": "correspondence"
             },
             {
-                "amount": "57 200",
+                "amount": "57 200 Заочное 2 года",
                 "id": "2 года",
                 "status": "correspondence"
             },
             {
-                "amount": "30 000",
+                "amount": "30 000 Заочная (дистант) 2 года 3 мес",
                 "id": "2 года 3 мес",
                 "status": "correspondenceDistant"
             }
@@ -756,22 +756,22 @@
         "code": "Код направления 44.04.01",
         "prices": [
             {
-                "amount": "57 200",
+                "amount": "57 200 Очное 2 года",
                 "id": "2 года",
                 "status": "fullTime"
             },
             {
-                "amount": "53 500",
+                "amount": "53 500 Заочное 2 года 3 мес",
                 "id": "2 года 3 мес",
                 "status": "correspondence"
             },
             {
-                "amount": "57 200",
+                "amount": "57 200 Заочное 2 года",
                 "id": "2 года",
                 "status": "correspondence"
             },
             {
-                "amount": "30 000",
+                "amount": "30 000 Заочное (дистант) 2 года 3 мес",
                 "id": "2 года 3 мес",
                 "status": "correspondenceDistant"
             }
@@ -784,22 +784,22 @@
         "code": "Код направления 44.04.01",
         "prices": [
             {
-                "amount": "55 000",
+                "amount": "55 000 Очное 2 года",
                 "id": "2 года",
                 "status": "fullTime"
             },
             {
-                "amount": "47 00",
+                "amount": "47 00  Заочное 2 года 3 мес",
                 "id": "2 года 3 мес",
                 "status": "correspondence"
             },
             {
-                "amount": "50 000",
+                "amount": "50 000 Заочное 2 года",
                 "id": "2 года",
                 "status": "correspondence"
             },
             {
-                "amount": "30 000",
+                "amount": "30 000 Заочное (дистант) 2 года 3 мес",
                 "id": "2 года 3 мес",
                 "status": "correspondenceDistant"
             }
@@ -812,22 +812,22 @@
         "code": "Код направления 38.04.02",
         "prices": [
             {
-                "amount": "50 000",
+                "amount": "50 000 Очное 2 года",
                 "id": "2 года",
                 "status": "fullTime"
             },
             {
-                "amount": "44 000",
+                "amount": "44 000 Заочное 2 года 3 мес",
                 "id": "2 года 3 мес",
                 "status": "correspondence"
             },
             {
-                "amount": "50 000",
+                "amount": "50 000 Заочное 2 года",
                 "id": "2 года",
                 "status": "correspondence"
             },
             {
-                "amount": "30 000",
+                "amount": "30 000 Заочное (дистант) 2 года 3 мес",
                 "id": "2 года 3 мес",
                 "status": "correspondenceDistant"
             }
@@ -840,22 +840,22 @@
         "code": "Код направления 38.04.02",
         "prices": [
             {
-                "amount": "55 000",
+                "amount": "55 000 Очное 2 года",
                 "id": "2 года",
                 "status": "fullTime"
             },
             {
-                "amount": "47 000",
+                "amount": "47 000 Заочное 2 года 3 мес",
                 "id": "2 года 3 мес",
                 "status": "correspondence"
             },
             {
-                "amount": "55 000",
+                "amount": "55 000 Заочное 2 года",
                 "id": "2 года",
                 "status": "correspondence"
             },
             {
-                "amount": "47 000",
+                "amount": "47 000 Заочное (дистант) 2 года 3 мес",
                 "id": "2 года 3 мес",
                 "status": "correspondenceDistant"
             }
@@ -868,22 +868,22 @@
         "code": "Код направления 38.04.02",
         "prices": [
             {
-                "amount": "50 000",
+                "amount": "50 000 Очное 2 года",
                 "id": "2 года",
                 "status": "fullTime"
             },
             {
-                "amount": "44 000",
+                "amount": "44 000 Заочное 2 года 3 мес",
                 "id": "2 года 3 мес",
                 "status": "correspondence"
             },
             {
-                "amount": "50 000",
+                "amount": "50 000 Заочное 2 года",
                 "id": "2 года",
                 "status": "correspondence"
             },
             {
-                "amount": "30 000",
+                "amount": "30 000 Заочное (дистант) 2 года 3 мес",
                 "id": "2 года 3 мес",
                 "status": "correspondenceDistant"
             }
@@ -896,22 +896,22 @@
         "code": "Код направления 38.04.01",
         "prices": [
             {
-                "amount": "50 000",
+                "amount": "50 000 Очное 2 года",
                 "id": "2 года",
                 "status": "fullTime"
             },
             {
-                "amount": "44 000",
+                "amount": "44 000 Заочное 2 года 3 мес",
                 "id": "2 года 3 мес",
                 "status": "correspondence"
             },
             {
-                "amount": "50 000",
+                "amount": "50 000 Заочное 2 года",
                 "id": "2 года",
                 "status": "correspondence"
             },
             {
-                "amount": "30 000",
+                "amount": "30 000 Заочное (дистант) 2 года 3 мес",
                 "id": "2 года 3 мес",
                 "status": "correspondenceDistant"
             }
@@ -924,22 +924,22 @@
         "code": "Код направления 38.04.04",
         "prices": [
             {
-                "amount": "50 000",
+                "amount": "50 000 Очное 2 года",
                 "id": "2 года",
                 "status": "fullTime"
             },
             {
-                "amount": "44 000",
+                "amount": "44 000 Заочное 2 года 3 мес",
                 "id": "2 года 3 мес",
                 "status": "correspondence"
             },
             {
-                "amount": "50 000",
+                "amount": "50 000 Заочное 2 года",
                 "id": "2 года",
                 "status": "correspondence"
             },
             {
-                "amount": "30 000",
+                "amount": "30 000 Заочное (дистант) 2 года 3 мес",
                 "id": "2 года 3 мес",
                 "status": "correspondenceDistant"
             }
@@ -952,27 +952,27 @@
         "code": "Код направления 37.05.01",
         "prices": [
             {
-                "amount": "68 000",
+                "amount": "68 000 Очное на базе СОО 5.5 лет",
                 "id": "5.5 лет",
                 "status": "fullTimeCOO"
             },
             {
-                "amount": "83 000",
+                "amount": "83 000 Очная на базе СПО 4.5 года",
                 "id": "4.5 года",
                 "status": "fullTimeCPO"
             },
             {
-                "amount": "58 500",
+                "amount": "58 500 Очная на базе медицинского СПО 4.5 года",
                 "id": "4.5 года",
                 "status": "fullTimeMedCPO"
             },
             {
-                "amount": "58 500",
+                "amount": "58 500 Очная на базе высшего психолого-педагогического, дефектологического и педагогического образования 3 года",
                 "id": "3 года",
                 "status": "fullTimeSpecial"
             },
             {
-                "amount": "58 500",
+                "amount": "58 500 Очная на базе неспециального высшего образования 4 года",
                 "id": "4 года",
                 "status": "fullTimeNoSpecial"
             }
@@ -985,32 +985,32 @@
         "code": "Код направления 45.03.02",
         "prices": [
             {
-                "amount": "58 500",
+                "amount": "58 500 Очная 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "42 000",
+                "amount": "42 000 Заочная (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "49 500",
+                "amount": "49 500 Заочная (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "42 000",
+                "amount": "42 000 Заочная (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "49 000",
+                "amount": "49 000 Заочная (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "29 000",
+                "amount": "29 000 Заочная (дистант) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceDistant"
             }
@@ -1023,32 +1023,32 @@
         "code": "Код направления 43.03.01",
         "prices": [
             {
-                "amount": "52 500",
+                "amount": "52 500 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "39 000",
+                "amount": "39 000 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "45 500",
+                "amount": "45 500 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "39 000",
+                "amount": "39 000 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "45 000",
+                "amount": "45 000 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceDistant"
             }
@@ -1061,32 +1061,32 @@
         "code": "Код направления 43.03.01",
         "prices": [
             {
-                "amount": "48 500",
+                "amount": "48 500 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceDistant"
             }
@@ -1099,32 +1099,32 @@
         "code": "Код направления 43.03.01",
         "prices": [
             {
-                "amount": "48 500",
+                "amount": "48 500 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceDistant"
             }
@@ -1137,32 +1137,32 @@
         "code": "Код направления 43.03.01",
         "prices": [
             {
-                "amount": "58 500",
+                "amount": "58 500 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "30 000",
+                "amount": "30 000 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "35 000",
+                "amount": "35 000 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "30 000",
+                "amount": "30 000 Заочное (дистант) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceDistant"
             }
@@ -1175,32 +1175,32 @@
         "code": "Код направления 38.03.02",
         "prices": [
             {
-                "amount": "50 000",
+                "amount": "50 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceDistant"
             }
@@ -1213,32 +1213,32 @@
         "code": "Код направления 38.03.02",
         "prices": [
             {
-                "amount": "50 000",
+                "amount": "50 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceDistant"
             }
@@ -1251,32 +1251,32 @@
         "code": "Код направления 38.03.02",
         "prices": [
             {
-                "amount": "50 000",
+                "amount": "50 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceDistant"
             }
@@ -1289,32 +1289,32 @@
         "code": "Код направления 38.03.02",
         "prices": [
             {
-                "amount": "50 000",
+                "amount": "50 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "30 000",
+                "amount": "30 000 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "35 000",
+                "amount": "35 000 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "30 000",
+                "amount": "30 000 Заочное (дистант) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceDistant"
             }
@@ -1327,32 +1327,32 @@
         "code": "Код направления 38.03.01",
         "prices": [
             {
-                "amount": "50 000",
+                "amount": "50 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceDistant"
             }
@@ -1365,32 +1365,32 @@
         "code": "Код направления 38.03.01",
         "prices": [
             {
-                "amount": "50 000",
+                "amount": "50 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceDistant"
             }
@@ -1403,32 +1403,32 @@
         "code": "Код направления 38.03.01",
         "prices": [
             {
-                "amount": "50 000",
+                "amount": "50 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceDistant"
             }
@@ -1441,32 +1441,32 @@
         "code": "Код направления 38.03.01",
         "prices": [
             {
-                "amount": "50 000",
+                "amount": "50 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceDistant"
             }
@@ -1479,32 +1479,32 @@
         "code": "Код направления 38.03.04",
         "prices": [
             {
-                "amount": "55 000",
+                "amount": "55 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (классика) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Заочное (классика) 3.5 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "30 000",
+                "amount": "30 000 Заочное (дистант) 3.5 года",
                 "id": "3.5 года",
                 "status": "correspondenceDistant"
             }
@@ -1517,22 +1517,22 @@
         "code": "Код направления 38.03.04",
         "prices": [
             {
-                "amount": "58 500",
+                "amount": "58 500 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Очно-заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "fullTimeСorrespondenceGVD"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Очно-заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "fullTimeСorrespondenceClassic"
             },
             {
-                "amount": "30 000",
+                "amount": "30 000 Очно-заочное (дистант) 3.5 года",
                 "id": "3.5 года",
                 "status": "fullTimeСorrespondenceDistant"
             }
@@ -1545,22 +1545,22 @@
         "code": "Код направления 42.03.01",
         "prices": [
             {
-                "amount": "50 000",
+                "amount": "50 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Очно-Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "fullTimeСorrespondenceGVD"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "fullTimeСorrespondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 3.5 года",
                 "id": "3.5 года",
                 "status": "fullTimeСorrespondenceDistant"
             }
@@ -1573,22 +1573,22 @@
         "code": "Код направления 43.03.01",
         "prices": [
             {
-                "amount": "50 000",
+                "amount": "50 000 Очное 3 года",
                 "id": "3 года",
                 "status": "fullTime"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Очно-Заочное (ГВД) 3.5 года",
                 "id": "3.5 года",
                 "status": "fullTimeСorrespondenceGVD"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "fullTimeСorrespondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 3.5 года",
                 "id": "3.5 года",
                 "status": "fullTimeСorrespondenceDistant"
             }
@@ -1601,33 +1601,33 @@
         "code": "Код направления 45.03.02",
         "prices": [
             {
-                "amount": "48 000",
+                "amount": "48 000 Очное 2.5 года",
                 "id": "2.5 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "48 000",
+                "amount": "48 000 Очно-Заочное (ГВД) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceGVD"
             },
             {
-                "amount": "48 000",
+                "amount": "48 000 Заочное (классика) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceClassic"
             },
             {
-                "amount": "39 000",
+                "amount": "39 000 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "39 000",
+                "amount": "39 000 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "29 000",
+                "amount": "29 000 Заочное (дистант) 3 года",
                 "id": "3 года",
                 "status": "correspondenceDistant"
             }
@@ -1640,33 +1640,33 @@
         "code": "Код направления 44.03.01",
         "prices": [
             {
-                "amount": "48 000",
+                "amount": "48 000 Очное 2.5 года",
                 "id": "2.5 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "48 000",
+                "amount": "48 000 Очно-заочное (ГВД) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceGVD"
             },
             {
-                "amount": "48 000",
+                "amount": "48 000 Очно-заочное (классика) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceClassic"
             },
             {
-                "amount": "39 000",
+                "amount": "39 000 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "39 000",
+                "amount": "39 000 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 3 года",
                 "id": "3 года",
                 "status": "correspondenceDistant"
             }
@@ -1679,33 +1679,33 @@
         "code": "Код направления 44.03.01",
         "prices": [
             {
-                "amount": "38 000",
+                "amount": "38 000 Очное 2.5 года",
                 "id": "2.5 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Очно-заочное (ГВД) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceGVD"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Очно-заочное (классика) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceClassic"
             },
             {
-                "amount": "32 000",
+                "amount": "32 000 Заочное (ГВД)",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 000",
+                "amount": "32 000 Заочное (классика)",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант)",
                 "id": "3 года",
                 "status": "correspondenceDistant"
             }
@@ -1718,33 +1718,33 @@
         "code": "Код направления 44.03.01",
         "prices": [
             {
-                "amount": "38 000",
+                "amount": "38 000 Очное 2.5 года",
                 "id": "2.5 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Очно-заочное (ГВД) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceGVD"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Очно-заочное (классика) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceClassic"
             },
             {
-                "amount": "32 000",
+                "amount": "32 000 Заочное (ГВД)",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 000",
+                "amount": "32 000 Заочное (классика)",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант)",
                 "id": "3 года",
                 "status": "correspondenceDistant"
             }
@@ -1757,33 +1757,33 @@
         "code": "Код направления 44.03.01",
         "prices": [
             {
-                "amount": "48 000",
+                "amount": "48 000 Очное 2.5 года",
                 "id": "2.5 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "48 000",
+                "amount": "48 000 Очно-заочное (ГВД) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceGVD"
             },
             {
-                "amount": "48 000",
+                "amount": "48 000 Очно-заочное (классика) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceClassic"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "30 000",
+                "amount": "30 000 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "30 000",
+                "amount": "30 000 Заочное (дистант) 3 года",
                 "id": "3 года",
                 "status": "correspondenceDistant"
             }
@@ -1796,33 +1796,33 @@
         "code": "Код направления 38.03.02",
         "prices": [
             {
-                "amount": "38 000",
+                "amount": "38 000 Очное 2.5 года",
                 "id": "2.5 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Очно-заочное (ГВД) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceGVD"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Очно-заочное (классика) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceClassic"
             },
             {
-                "amount": "32 000",
+                "amount": "32 000 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 000",
+                "amount": "32 000 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 3 года",
                 "id": "3 года",
                 "status": "correspondenceDistant"
             }
@@ -1835,33 +1835,33 @@
         "code": "Код направления 38.03.02",
         "prices": [
             {
-                "amount": "38 000",
+                "amount": "38 000 Очное 2.5 года",
                 "id": "2.5 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Очно-заочное (ГВД) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceGVD"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Очно-заочное (классика) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceClassic"
             },
             {
-                "amount": "32 000",
+                "amount": "32 000 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 000",
+                "amount": "32 000 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 3 года",
                 "id": "3 года",
                 "status": "correspondenceDistant"
             }
@@ -1874,33 +1874,33 @@
         "code": "Код направления 38.03.02",
         "prices": [
             {
-                "amount": "38 000",
+                "amount": "38 000 Очное 2.5 года",
                 "id": "2.5 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Очно-заочное (ГВД) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceGVD"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Очно-заочное (классика) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceClassic"
             },
             {
-                "amount": "32 000",
+                "amount": "32 000 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 000",
+                "amount": "32 000 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 3 года",
                 "id": "3 года",
                 "status": "correspondenceDistant"
             }
@@ -1913,33 +1913,33 @@
         "code": "Код направления 38.03.02",
         "prices": [
             {
-                "amount": "48 000",
+                "amount": "48 000 Очное 2.5 года",
                 "id": "2.5 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "48 000",
+                "amount": "48 000 Очно-заочное (ГВД) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceGVD"
             },
             {
-                "amount": "48 000",
+                "amount": "48 000 Очно-заочное (классика) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceClassic"
             },
             {
-                "amount": "32 500",
+                "amount": "32 500 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "30 000",
+                "amount": "30 000 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "30 000",
+                "amount": "30 000 Заочное (дистант) 3 года",
                 "id": "3 года",
                 "status": "correspondenceDistant"
             }
@@ -1952,33 +1952,33 @@
         "code": "Код направления 38.03.01",
         "prices": [
             {
-                "amount": "38 000",
+                "amount": "38 000 Очное 2.5 года",
                 "id": "2.5 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Очно-заочное (ГВД) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceGVD"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Очно-заочное (классика) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceClassic"
             },
             {
-                "amount": "32 000",
+                "amount": "32 000 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 000",
+                "amount": "32 000 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 3 года",
                 "id": "3 года",
                 "status": "correspondenceDistant"
             }
@@ -1991,33 +1991,33 @@
         "code": "Код направления 38.03.01",
         "prices": [
             {
-                "amount": "38 000",
+                "amount": "38 000 Очное 2.5 года",
                 "id": "2.5 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Очно-заочное (ГВД) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceGVD"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Очно-заочное (классика) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceClassic"
             },
             {
-                "amount": "32 000",
+                "amount": "32 000 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 000",
+                "amount": "32 000 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 3 года",
                 "id": "3 года",
                 "status": "correspondenceDistant"
             }
@@ -2030,33 +2030,33 @@
         "code": "Код направления 38.03.01",
         "prices": [
             {
-                "amount": "38 000",
+                "amount": "38 000 Очное 2.5 года",
                 "id": "2.5 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Очно-заочное (ГВД) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceGVD"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Очно-заочное (классика) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceClassic"
             },
             {
-                "amount": "32 000",
+                "amount": "32 000 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 000",
+                "amount": "32 000 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 3 года",
                 "id": "3 года",
                 "status": "correspondenceDistant"
             }
@@ -2069,33 +2069,33 @@
         "code": "Код направления 38.03.01",
         "prices": [
             {
-                "amount": "38 000",
+                "amount": "38 000 Очное 2.5 года",
                 "id": "2.5 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Очно-заочное (ГВД) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceGVD"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Очно-заочное (классика) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceClassic"
             },
             {
-                "amount": "32 000",
+                "amount": "32 000 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 000",
+                "amount": "32 000 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 3 года",
                 "id": "3 года",
                 "status": "correspondenceDistant"
             }
@@ -2108,33 +2108,33 @@
         "code": "Код направления 38.03.04",
         "prices": [
             {
-                "amount": "45 000",
+                "amount": "45 000 Очное 2.5 года",
                 "id": "2.5 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "45 000",
+                "amount": "45 000 Очно-заочное (ГВД) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceGVD"
             },
             {
-                "amount": "45 000",
+                "amount": "45 000 Очно-заочное (классика) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceClassic"
             },
             {
-                "amount": "37 000",
+                "amount": "37 000 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "37 000",
+                "amount": "37 000 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "30 000",
+                "amount": "30 000 Заочное (дистант) 3 года",
                 "id": "3 года",
                 "status": "correspondenceDistant"
             }
@@ -2147,33 +2147,33 @@
         "code": "Код направления 42.03.01",
         "prices": [
             {
-                "amount": "38 000",
+                "amount": "38 000 Очное 2.5 года",
                 "id": "2.5 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Очно-заочное (ГВД) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceGVD"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Очно-заочное (классика) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceClassic"
             },
             {
-                "amount": "32 000",
+                "amount": "32 000 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 000",
+                "amount": "32 000 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 3 года",
                 "id": "3 года",
                 "status": "correspondenceDistant"
             }
@@ -2186,33 +2186,33 @@
         "code": "Код направления 43.03.01",
         "prices": [
             {
-                "amount": "38 000",
+                "amount": "38 000 Очное 2.5 года",
                 "id": "2.5 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Очно-заочное (ГВД) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceGVD"
             },
             {
-                "amount": "38 000",
+                "amount": "38 000 Очно-заочное (классика) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceClassic"
             },
             {
-                "amount": "32 000",
+                "amount": "32 000 Заочное (ГВД) 3 года",
                 "id": "3 года",
                 "status": "correspondenceGVD"
             },
             {
-                "amount": "32 000",
+                "amount": "32 000 Заочное (классика) 3 года",
                 "id": "3 года",
                 "status": "correspondenceClassic"
             },
             {
-                "amount": "25 000",
+                "amount": "25 000 Заочное (дистант) 3 года",
                 "id": "3 года",
                 "status": "correspondenceDistant"
             }
@@ -2225,23 +2225,23 @@
         "code": "Код направления 37.03.01",
         "prices": [
             {
-                "amount": "45 000",
+                "amount": "45 000 Очное 2.5 года",
                 "id": "2.5 года",
                 "checked": true,
                 "status": "fullTime"
             },
             {
-                "amount": "45 000",
+                "amount": "45 000 Очно-заочное (ГВД) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceGVD"
             },
             {
-                "amount": "45 000",
+                "amount": "45 000 Очно-заочное (классика) 2.5 года",
                 "id": "2.5 года",
                 "status": "fullTimeСorrespondenceClassic"
             },
             {
-                "amount": "30 000",
+                "amount": "30 000 Очно-заочное (дистант) 3 года",
                 "id": "3 года",
                 "status": "fullTimeСorrespondenceDistant"
             }

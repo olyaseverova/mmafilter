@@ -1,6 +1,9 @@
 <template>
-  <div class="filter">
-    <h1 class="headline">Направления</h1>
+  <div class="filter page">
+    <header class="main-header">
+      <h1 class="headline">Направления</h1>
+      <router-link class="link" to="/autorisation">Авторизоваться</router-link>
+    </header>
     <input
       class="filter__input"
       type="text"
@@ -23,7 +26,11 @@
             :checked="direction.checked"
             @click="changeRange($event), chooseProgram($event)"
           />
-          <div class="directions-list__name" :id="direction.id">
+          <div
+            class="directions-list__name"
+            :id="direction.id"
+            :class="direction.color"
+          >
             {{ direction.name }}
           </div>
         </label>
@@ -101,22 +108,22 @@
               name="range"
               id="range"
               min="0"
-              max="9"
+              max="10"
               step="1"
-              value="7"
-              @change="chooseProgram"
+              value="10"
+              @change="changeRange($event), chooseProgram($event)"
             />
           </label>
-          <output for="range" class="range__output">4 года</output>
+          <output for="range" class="range__output">Любой</output>
         </div>
       </div>
       <ul class="subjects-list list ul">
         <li
-          class="subjects-list__item"
+          class="subjects-list__item price-none"
           v-for="subject in subjects"
           :key="subject.id"
           :id="subject.id"
-          :class="{ none: subject.none }"
+          :class="[subject.color, { none: subject.none }]"
         >
           <h3 class="subjects-list__name" :id="subject.id">
             {{ subject.name }}
@@ -126,7 +133,7 @@
             {{ subject.direction }}
           </p>
           <p class="subjects-list__code up">{{ subject.code }}</p>
-          <div class="price flex">
+          <div class="price">
             <p class="price-headline">Цена:</p>
             <ul class="prices-list list" :id="subject.id">
               <li
@@ -134,7 +141,6 @@
                 v-for="price in subject.prices"
                 :key="price.id"
                 :id="price.id"
-                :class="{ none: !price.checked }"
               >
                 <p class="prices-list__name" :id="price.status">
                   {{ price.amount }}
@@ -223,61 +229,33 @@ export default {
     },
 
     changeRange: function (event) {
-      let rangeOutput = document.querySelector(".range__output");
+      let formChecked;
+      let rangeInputs = document.querySelectorAll(".range__input");
       let programInputs = document.querySelectorAll(".programs-list__input");
       let formItems = document.querySelectorAll(".forms-list__item");
+      let formInputs = document.querySelectorAll(".forms-list__input");
+      let subjects = document.querySelectorAll(".subjects-list__item");
 
-      document.querySelector(".range__input").value = "7";
-      rangeOutput.value = "4 года";
+      formInputs.forEach(function (formInput) {
+        if (formInput.checked === true) {
+          formChecked = formInput;
+        }
+      });
 
-      if (event.target.value === "Бакалавриат на базе СПО") {
-        document.querySelector(".range__input").value = "5";
-        rangeOutput.value = "3 года";
-      }
-      if (event.target.value === "Востоковедение и африканистика") {
-        document.querySelector(".range__input").value = "0";
-        rangeOutput.value = "День";
-      }
-      if (
-        event.target.id === "Заочная (ГВД)" ||
-        event.target.id === "Заочная (классика)" ||
-        event.target.id === "Заочная (дистант)"
-      ) {
-        document.querySelector(".range__input").value = "8";
-        rangeOutput.value = "4.5 года";
-      }
+      subjects.forEach(function (subject) {
+        subject.classList.remove("price-none");
+        subject.classList.add("price-flex");
+
+        rangeInputs.forEach(function (rangeInput) {
+          if (formChecked.id === "Любая" && rangeInput.value === "10") {
+            subject.classList.add("price-none");
+            subject.classList.remove("price-flex");
+          }
+        });
+      });
 
       programInputs.forEach(function (programInput) {
         formItems.forEach(function (formItem) {
-          if (programInput.checked && programInput.value === "Магистратура") {
-            if (event.target.id === "Заочная (дистант)") {
-              document.querySelector(".range__input").value = "3";
-              rangeOutput.value = "2 года 3 мес";
-            }
-            if (event.target.id === "Очная") {
-              document.querySelector(".range__input").value = "2";
-              rangeOutput.value = "2 года";
-            }
-          }
-
-          if (
-            programInput.checked &&
-            programInput.value === "Бакалавриат на базе СПО"
-          ) {
-            if (
-              event.target.id === "Заочная (ГВД)" ||
-              event.target.id === "Заочная (классика)" ||
-              event.target.id === "Заочная (дистант)"
-            ) {
-              document.querySelector(".range__input").value = "6";
-              rangeOutput.value = "3.5 года";
-            }
-            if (event.target.id === "Очная") {
-              document.querySelector(".range__input").value = "5";
-              rangeOutput.value = "3 года";
-            }
-          }
-
           if (
             event.target.checked &&
             event.target.classList.contains("programs-list__input")
@@ -293,9 +271,10 @@ export default {
               formItem.classList.add("none");
               if (
                 formItem.id === "0" ||
-                formItem.id === "2" ||
+                formItem.id === "1" ||
                 formItem.id === "3" ||
-                formItem.id === "4"
+                formItem.id === "4" ||
+                formItem.id === "5"
               ) {
                 formItem.classList.remove("none");
               }
@@ -312,55 +291,6 @@ export default {
 
           if (event.target.value === "Бакалавриат на базе ВО") {
             event.target.classList.add("shownbachelorVO");
-            document.querySelector(".range__input").value = "5";
-            rangeOutput.value = "2.5 года";
-            formItem.classList.add("none");
-            if (formItem.querySelector(".forms-list__input").checked) {
-              formItem
-                .querySelector(".forms-list__input")
-                .removeAttribute("checked");
-            }
-            if (
-              formItem.id === "0" ||
-              formItem.id === "7" ||
-              formItem.id === "8" ||
-              formItem.id === "2" ||
-              formItem.id === "3" ||
-              formItem.id === "4"
-            ) {
-              formItem.classList.remove("none");
-            }
-            if (formItem.id === "0") {
-              formItem.querySelector(".forms-list__input").checked = true;
-            }
-          }
-
-          if (
-            programInput.checked &&
-            programInput.value === "Бакалавриат на базе ВО"
-          ) {
-            if (
-              event.target.id === "Заочная (ГВД)" ||
-              event.target.id === "Заочная (классика)" ||
-              event.target.id === "Заочная (дистант)"
-            ) {
-              document.querySelector(".range__input").value = "5";
-              rangeOutput.value = "3 года";
-            }
-            if (
-              event.target.id === "Очная" ||
-              event.target.id === "Очно-заочная (ГВД)" ||
-              event.target.id === "Очно-заочная (классика)"
-            ) {
-              document.querySelector(".range__input").value = "4";
-              rangeOutput.value = "2.5 года";
-            }
-          }
-
-          if (event.target.value === "Магистратура") {
-            event.target.classList.add("shownMagistracy");
-            document.querySelector(".range__input").value = "2";
-            rangeOutput.value = "2 года";
             formItem.classList.add("none");
             if (formItem.querySelector(".forms-list__input").checked) {
               formItem
@@ -370,7 +300,11 @@ export default {
             if (
               formItem.id === "0" ||
               formItem.id === "1" ||
-              formItem.id === "4"
+              formItem.id === "8" ||
+              formItem.id === "9" ||
+              formItem.id === "3" ||
+              formItem.id === "4" ||
+              formItem.id === "5"
             ) {
               formItem.classList.remove("none");
             }
@@ -379,24 +313,8 @@ export default {
             }
           }
 
-          if (programInput.checked && programInput.value === "Магистратура") {
-            if (
-              event.target.id === "Очная" ||
-              event.target.id === "Заочная (2 года / 2 года и 3 мес)"
-            ) {
-              document.querySelector(".range__input").value = "2";
-              rangeOutput.value = "2 года";
-            }
-            if (event.target.id === "Заочная (дистант)") {
-              document.querySelector(".range__input").value = "3";
-              rangeOutput.value = "2 года 3 мес";
-            }
-          }
-
-          if (event.target.value === "Специалитет") {
-            event.target.classList.add("shownSpecialty");
-            document.querySelector(".range__input").value = "9";
-            rangeOutput.value = "5.5 лет";
+          if (event.target.value === "Магистратура") {
+            event.target.classList.add("shownMagistracy");
             formItem.classList.add("none");
             if (formItem.querySelector(".forms-list__input").checked) {
               formItem
@@ -404,44 +322,38 @@ export default {
                 .removeAttribute("checked");
             }
             if (
-              formItem.id === "5" ||
-              formItem.id === "6" ||
-              formItem.id === "10" ||
-              formItem.id === "11" ||
-              formItem.id === "12"
+              formItem.id === "0" ||
+              formItem.id === "1" ||
+              formItem.id === "2" ||
+              formItem.id === "5"
             ) {
               formItem.classList.remove("none");
             }
-            if (formItem.id === "5") {
+            if (formItem.id === "0") {
               formItem.querySelector(".forms-list__input").checked = true;
             }
           }
 
-          if (programInput.checked && programInput.value === "Специалитет") {
-            if (event.target.id === "Очная на базе СОО") {
-              document.querySelector(".range__input").value = "9";
-              rangeOutput.value = "5.5 лет";
+          if (event.target.value === "Специалитет") {
+            event.target.classList.add("shownSpecialty");
+            formItem.classList.add("none");
+            if (formItem.querySelector(".forms-list__input").checked) {
+              formItem
+                .querySelector(".forms-list__input")
+                .removeAttribute("checked");
             }
             if (
-              event.target.id === "Очная на базе СПО" ||
-              event.target.id === "Очная на базе медицинского СПО"
+              formItem.id === "0" ||
+              formItem.id === "6" ||
+              formItem.id === "7" ||
+              formItem.id === "11" ||
+              formItem.id === "12" ||
+              formItem.id === "13"
             ) {
-              document.querySelector(".range__input").value = "8";
-              rangeOutput.value = "4.5 года";
+              formItem.classList.remove("none");
             }
-            if (
-              event.target.id ===
-              "Очная на базе высшего психолого-педагогического, дефектологического и педагогического образования"
-            ) {
-              document.querySelector(".range__input").value = "5";
-              rangeOutput.value = "3 года";
-            }
-            if (
-              event.target.id ===
-              "Очная на базе неспециального высшего образования"
-            ) {
-              document.querySelector(".range__input").value = "7";
-              rangeOutput.value = "4 года";
+            if (formItem.id === "0") {
+              formItem.querySelector(".forms-list__input").checked = true;
             }
           }
         });
@@ -498,6 +410,9 @@ export default {
         if (event.target.value === "9") {
           rangeOutput.value = "5.5 лет";
         }
+        if (event.target.value === "10") {
+          rangeOutput.value = "Любой";
+        }
       }
 
       directionInputs.forEach(function (directionInput) {
@@ -527,54 +442,28 @@ export default {
         priceItems.forEach(function (priceItem) {
           priceItem.classList.add("none");
           if (
-            subjectDirection.textContent === programName &&
-            subjectName.textContent === directionContent &&
-            priceItem.querySelector(".prices-list__name").id === formValue &&
-            priceItem.querySelector(".prices-list__srock").id ===
-              rangeOutput.value &&
-            patternRegExp.test(subjectName.textContent)
+            (priceItem.querySelector(".prices-list__name").id === formValue ||
+              formValue === "any") &&
+            (priceItem.querySelector(".prices-list__srock").id ===
+              rangeOutput.value ||
+              rangeOutput.value === "Любой")
           ) {
             priceItem.classList.remove("none");
-            subjectsItem.classList.remove("none");
-            subjectsQuantity.push(subjectsItem);
-          }
-          if (
-            programName === "Любая" &&
-            subjectName.textContent === directionContent &&
-            priceItem.querySelector(".prices-list__name").id === formValue &&
-            priceItem.querySelector(".prices-list__srock").id ===
-              rangeOutput.value &&
-            patternRegExp.test(subjectName.textContent)
-          ) {
-            priceItem.classList.remove("none");
-            subjectsItem.classList.remove("none");
-            subjectsQuantity.push(subjectsItem);
-          }
-          if (
-            directionContent === "Все направления" &&
-            subjectDirection.textContent === programName &&
-            priceItem.querySelector(".prices-list__name").id === formValue &&
-            priceItem.querySelector(".prices-list__srock").id ===
-              rangeOutput.value &&
-            patternRegExp.test(subjectName.textContent)
-          ) {
-            priceItem.classList.remove("none");
-            subjectsItem.classList.remove("none");
-            subjectsQuantity.push(subjectsItem);
-          }
-          if (
-            directionContent === "Все направления" &&
-            programName === "Любая" &&
-            priceItem.querySelector(".prices-list__name").id === formValue &&
-            priceItem.querySelector(".prices-list__srock").id ===
-              rangeOutput.value &&
-            patternRegExp.test(subjectName.textContent)
-          ) {
-            priceItem.classList.remove("none");
-            subjectsItem.classList.remove("none");
-            subjectsQuantity.push(subjectsItem);
+            subjectsItem.classList.add("priceActivated");
           }
         });
+
+        if (
+          (subjectDirection.textContent === programName ||
+            programName === "Любая") &&
+          (subjectName.textContent === directionContent ||
+            directionContent === "Все направления") &&
+          patternRegExp.test(subjectName.textContent) &&
+          subjectsItem.classList.contains("priceActivated")
+        ) {
+          subjectsItem.classList.remove("none");
+          subjectsQuantity.push(subjectsItem);
+        }
       });
 
       if (subjectsQuantity.length > 9) {
@@ -601,14 +490,34 @@ export default {
       if (store.state.subjects) {
         store.state.subjects.forEach((p, i) => {
           p.id = i;
-          if (
-            p.direction === "Бакалавриат на базе СПО" ||
-            p.direction === "Магистратура" ||
-            p.direction === "Специалитет" ||
-            p.direction === "Бакалавриат на базе ВО" ||
-            p.name === "Востоковедение и африканистика" ||
-            p.id > 8
-          ) {
+          if (p.name === "Лингвистика") {
+            p.color = "green";
+          }
+          if (p.name === "Педагогическое образование") {
+            p.color = "bodily";
+          }
+          if (p.name === "Сервис") {
+            p.color = "neon";
+          }
+          if (p.name === "Менеджмент") {
+            p.color = "pink";
+          }
+          if (p.name === "Реклама и связи с общественностью") {
+            p.color = "violet";
+          }
+          if (p.name === "Экономика") {
+            p.color = "yellow";
+          }
+          if (p.name === "Психология") {
+            p.color = "brown";
+          }
+          if (p.name === "Востоковедение и африканистика") {
+            p.color = "deep-blue";
+          }
+          if (p.name === "Государственное и муниципальное управление") {
+            p.color = "deep-green";
+          }
+          if (p.id > 8) {
             p.none = true;
           }
         });
@@ -627,6 +536,33 @@ export default {
       if (store.state.directions) {
         store.state.directions.forEach((p, i) => {
           p.id = i;
+          if (p.name === "Лингвистика") {
+            p.color = "green";
+          }
+          if (p.name === "Педагогическое образование") {
+            p.color = "bodily";
+          }
+          if (p.name === "Сервис") {
+            p.color = "neon";
+          }
+          if (p.name === "Менеджмент") {
+            p.color = "pink";
+          }
+          if (p.name === "Реклама и связи с общественностью") {
+            p.color = "violet";
+          }
+          if (p.name === "Экономика") {
+            p.color = "yellow";
+          }
+          if (p.name === "Психология") {
+            p.color = "brown";
+          }
+          if (p.name === "Востоковедение и африканистика") {
+            p.color = "deep-blue";
+          }
+          if (p.name === "Государственное и муниципальное управление") {
+            p.color = "deep-green";
+          }
         });
       }
       return store.state.directions;
@@ -652,10 +588,6 @@ export default {
     store.dispatch("fetchForms");
     store.dispatch("fetchDirections");
     store.dispatch("fetchPrograms");
-  },
-
-  data() {
-    return {};
   },
 };
 </script>
