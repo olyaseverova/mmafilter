@@ -2,7 +2,8 @@
   <div class="autorisation page">
     <header class="main-header">
       <h1 class="headline">Авторизация</h1>
-      <router-link class="link" to="/">Направления</router-link>
+      <router-link class="link" to="/ways">Направления</router-link>
+      <router-link class="link" to="/">Стоимость обучения</router-link>
     </header>
     <form class="sign-up" method="post" action="" enctype="multipart/form-data">
       <ul class="sign-up-types flex space-between list">

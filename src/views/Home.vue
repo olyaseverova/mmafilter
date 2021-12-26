@@ -1,7 +1,8 @@
 <template>
   <div class="filter page">
     <header class="main-header">
-      <h1 class="headline">Направления</h1>
+      <h1 class="headline">Стоимость обучения</h1>
+      <router-link class="link" to="/ways">Направления</router-link>
       <router-link class="link" to="/autorisation">Авторизоваться</router-link>
     </header>
     <input
@@ -132,7 +133,10 @@
           <p class="subjects-list__direction" :id="subject.id">
             {{ subject.direction }}
           </p>
-          <p class="subjects-list__code up">{{ subject.code }}</p>
+          <div class="code">
+            <p class="subjects-list__code up">Код направления</p>
+            <p class="subjects-list__code up">{{ subject.code }}</p>
+          </div>
           <div class="price">
             <p class="price-headline">Цена:</p>
             <ul class="prices-list list" :id="subject.id">
